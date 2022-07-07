@@ -24,7 +24,7 @@ Docker 镜像构建以及 token 更新任务为开源项目,请参照:
 https://github.com/yuanzhibang-tool/docker.git
 https://github.com/yuanzhibang-tool/oapp-token-cron-task.git
 
-> [danger]请注意阅读项目以及目录下的 README.md 以更快实现功能开发
+!>请注意阅读项目以及目录下的 README.md 以更快实现功能开发
 
 ---
 
@@ -47,4 +47,4 @@ https://github.com/yuanzhibang-tool/demo
 **_demo 或者 npm 包已完成的工作:_**
 1.js 签名生成 2.所有接口的封装调用 3.接口调用支持设置代理,具体使用请参照 单元测试代码 4.支持从 redis 获取取`server_access_token`或者`js_ticket`
 
-> [danger]欢迎猿猿们提供其他语言的 demo 代码,请按照其他语言的封装进行封装,并提供单元测试.提供的代码将遵循 MIT 协议.
+!>欢迎猿猿们提供其他语言的 demo 代码,请按照其他语言的封装进行封装,并提供单元测试.提供的代码将遵循 MIT 协议.
