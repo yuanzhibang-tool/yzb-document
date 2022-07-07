@@ -1,47 +1,47 @@
 ## **相关通用回调的方法**
+
 > 相关通用回调的方法
 
-***
-[TOC=3]
-***
+### **bridge 准备好的回调**
 
-### **bridge准备好的回调**
->  bridge准备好的回调
+> bridge 准备好的回调
 
- `yzb.ready`
+`yzb.ready`
 
 **主要描述**
 
-| 主键 | 值 |
-| --- | --- |
+| 主键          | 值                   |
+| ------------- | -------------------- |
 | **接口描述:** | `bridge`准备好的回调 |
-| **备注** | 代理方法,不能调用 |
+| **备注**      | 代理方法,不能调用    |
 
-**原生调用js方法示例**
+**原生调用 js 方法示例**
 
-~~~javascript
-yzb.ready(()=>{
-    console.log("bridge is ready now!");
+```javascript
+yzb.ready(() => {
+  console.log('bridge is ready now!');
 });
-~~~
-***
+```
 
-### **bridge准备出现错误的回调**
->  bridge准备出现错误的回调
+---
 
- `yzb.error`
+### **bridge 准备出现错误的回调**
+
+> bridge 准备出现错误的回调
+
+`yzb.error`
 
 **主要描述**
 
-| 主键 | 值 |
-| --- | --- |
-| **接口描述:** | `bridge`准备出错的回调 |
-| **备注** | 收到该错误建议重新刷新页面,一般很少发生 |
+| 主键          | 值                                      |
+| ------------- | --------------------------------------- |
+| **接口描述:** | `bridge`准备出错的回调                  |
+| **备注**      | 收到该错误建议重新刷新页面,一般很少发生 |
 
-**原生调用js方法示例**
+**原生调用 js 方法示例**
 
-~~~javascript
-yzb.error(()=>{
-    console.log("bridge init error!");
+```javascript
+yzb.error(() => {
+  console.log('bridge init error!');
 });
-~~~
+```

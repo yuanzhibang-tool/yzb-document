@@ -1,15 +1,12 @@
 ## **通用资源相关接口说明**
-*****
-[TOC=3]
-***
 
 ### **获取用户总数的接口**
 
->获取使用的用户总数的接口
+> 获取使用的用户总数的接口
 
 **接口地址**
 
- `POST /CommonResource/getUserCount` 
+`POST /CommonResource/getUserCount`
 **参数说明**
 | 参数 | 是否必须 | 说明|
 | --- | --- |---|
@@ -17,14 +14,15 @@
 
 **返回值**
 成功的返回值
+
 ```json
 {
-    "status": "2000",
-    "message": "ok",
-    "data": {
-        "user_count": "15"
-    }
+  "status": "2000",
+  "message": "ok",
+  "data": {
+    "user_count": "15"
+  }
 }
 ```
 
-***
+---
