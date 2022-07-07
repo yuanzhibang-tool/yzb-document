@@ -1,10 +1,10 @@
-### **工作流程**
+### 工作流程
 
 > 请参照流程图
 
 ![](../images/screenshot_1654686997675.png)
 
-### **引入 js,注入对象**
+### 引入 js,注入对象
 
 在`html`文件中`header`内引入`js bridge`
 
@@ -26,7 +26,7 @@ yzb.ready(
 
 ---
 
-### **变量列表**
+### 变量列表
 
 !>所有版本号信息均为`0.0.0`格式,遵从`major.minor.patch`版本格式发布,`major`为重大更新版本包含`break change`,变动较大,调用过程需要注意.`minor`为小更新,无需关注 api 变更,仅添加 api,除非必要,不会对原有接口进行变更,`patch`仅仅进行`bug`修复.
 
@@ -44,7 +44,7 @@ var containerVersion = yzb.containerVersion;
 
 ---
 
-### **API 列表**
+### API 列表
 
 !> 需要验证的原则,一个是会影响页面操作,一个是会有安全疑虑.
 
