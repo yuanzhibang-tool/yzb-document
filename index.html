@@ -28,7 +28,7 @@
             name: 'yuanzhibang.com',
             nameLink: 'https://yuanzhibang.com',
             repo: 'https://github.com/yuanzhibang-tool/yzb-document',
-            // logo: '/_media/icon.png',
+            // logo: '/_media/icon.svg',
             loadSidebar: true,
             subMaxLevel: 3,
             maxLevel: 4,
@@ -45,7 +45,7 @@
                 tabHeadings: true       // default
             },
             plugins: [
-                EditOnGithubPlugin.create('https://github.com/yuanzhibang-tool/yzb-document/', '', 'Edit on Github')
+                EditOnGithubPlugin.create('https://github.com/yuanzhibang-tool/yzb-document/blob/main/', '', 'Edit on Github')
             ],
             search: {
                 maxAge: 86400000, // Expiration time, the default one day
@@ -53,8 +53,8 @@
 
                 // Localization
                 placeholder: {
-                    '/zh-cn/': '搜索',
-                    '/': 'Type to search'
+                    '/zh-cn/': '输入关键字搜索',
+                    '/': '输入关键字搜索'
                 },
 
                 noData: 'No Results!',
@@ -62,7 +62,7 @@
                 // Localization
                 noData: {
                     '/zh-cn/': '找不到结果',
-                    '/': 'No Results'
+                    '/': '找不到结果'
                 },
 
                 // Headline depth, 1 - 6
