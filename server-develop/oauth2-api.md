@@ -1,6 +1,4 @@
-## **OAuth2 接口说明**
-
-### **使用免登陆 code 获取用户 open_id 的接口**
+### 使用免登陆 code 获取用户 open_id 的接口
 
 !>注意:此处获取的`access_token`在概念上和服务开发中获取的`access_token`不属于同一类`access_token`这里需要注意.服务器`access_token`主要是用来获取和操作应用相关的资源.而用户的`access_token`是用来操作用户相关资源的凭证.
 
@@ -46,7 +44,7 @@
 }
 ```
 
-### **获取`js_ticket`的接口**
+### 获取 js_ticket 的接口
 
 > `js_ticket`用于对网页开发中在`core.config`方法中对当前页面调用的`JS`方法进行签名的值,相当于密钥
 
@@ -93,7 +91,7 @@
 
 ---
 
-### **检测获取的`access_token`或者`js_ticket`是否有效的接口**
+### 检测获取的 access_token 或者 js_ticket 是否有效的接口
 
 !>使用最佳实践中使用阿里云函数计算或者 docker 集中获取更新`code`的无需调用该接口检验.
 

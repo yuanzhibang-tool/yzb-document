@@ -45,6 +45,13 @@ https://github.com/yuanzhibang-tool/demo
 ---
 
 **_demo 或者 npm 包已完成的工作:_**
-1.js 签名生成 2.所有接口的封装调用 3.接口调用支持设置代理,具体使用请参照 单元测试代码 4.支持从 redis 获取取`server_access_token`或者`js_ticket`
+
+1.js 签名生成
+
+2.所有接口的封装调用
+
+3.接口调用支持设置代理,具体使用请参照 单元测试代码
+
+4.支持从 redis 获取取`server_access_token`或者`js_ticket`
 
 !>欢迎猿猿们提供其他语言的 demo 代码,请按照其他语言的封装进行封装,并提供单元测试.提供的代码将遵循 MIT 协议.
