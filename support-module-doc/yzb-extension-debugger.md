@@ -1,4 +1,4 @@
-# @yuanzhibang/extension-debugger
+# @yuanzhibang/extension-debugger <!-- {docsify-ignore} -->
 
 用来进行猿之棒开放平台拓展的调试工具,模拟 renderer 进程和 node 进行进行通信以及回调
 **仓库地址:**
@@ -23,7 +23,7 @@ https://www.npmjs.com/package/@yuanzhibang/extension-debugger
 `typescript`使用演示 https://github.com/yuanzhibang-tool/yzb-extension-demo-ts/blob/main/debug/debug.ts
 `javascript`使用演示 https://github.com/yuanzhibang-tool/yzb-extension-demo-js/blob/main/debug/debug.js
 
-```typescript
+```javascript
 // 引入依赖
 import {
   extensionDebugger,
