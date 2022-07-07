@@ -1,6 +1,8 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](/)
-- [Update History](release-note/default.md)
-- [Guide](guide.md 'The greatest guide in the world')
-- [Get Started](get_started.md 'The greatest guide in the world')
+- [更新历史](release-note/default.md)
+- [开发前必读](default.md)
+  - [总览](before-develop/summary.md)
+  - [概念](before-develop/concept.md)
+  - [应用能力](before-develop/ability.md)
