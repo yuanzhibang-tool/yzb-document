@@ -1,6 +1,6 @@
 ---
 
-### **接口名称**:`setting.set`
+### `setting.set`
 
 **主要描述**
 
@@ -33,7 +33,7 @@
 
 ---
 
-### **接口名称**:`setting.get`
+### `setting.get`
 
 **主要描述**
 
@@ -73,7 +73,7 @@
 
 ---
 
-### **接口名称**:`setting.remove`
+### `setting.remove`
 
 **主要描述**
 

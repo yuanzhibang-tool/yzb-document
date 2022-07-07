@@ -6,7 +6,7 @@
 
 **该对象有如下几个方法:**
 
-### **接口名称**:`modalHelper.getInitData`
+### `modalHelper.getInitData`
 
 **主要描述**
 
@@ -23,7 +23,7 @@ var passInitData = modalHelper.getInitData();
 
 ---
 
-### **接口名称**:`modalHelper.cancel`
+### `modalHelper.cancel`
 
 **主要描述**
 
@@ -61,7 +61,7 @@ modalHelper.cancel();
 
 ---
 
-### **接口名称**:`modalHelper.confirm`
+### `modalHelper.confirm`
 
 **主要描述**
 

@@ -1,8 +1,6 @@
-## **notification 命名空间方法调用文档**
-
 > 通知相关命名空间方法调用相关文档
 
-### **接口名称**:`notification.vibrate`
+### `notification.vibrate`
 
 **主要描述**
 

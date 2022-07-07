@@ -1,10 +1,12 @@
-***
-### **接口名称**:`file.exist`
+---
+
+### `file.exist`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 获取文件是否存在的方法 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -13,59 +15,63 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-       "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {
         "exist":true|false
 }
 
-~~~
-***
-### **接口名称**:`file.getFileHash`
+```
+
+---
+
+### `file.getFileHash`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 获取文件`hash`的`js`方法 |  
-| **备注** | 可以返回文件的`md5`,`sha1`,`sha256`,`sha512` |  
+| **备注** | 可以返回文件的`md5`,`sha1`,`sha256`,`sha512` |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
 | --- | --- | --- | --- |
-| `hash_name` | hash类型 | 无 | `md5`,`sha1`,`sha256`,`sha512` |
+| `hash_name` | hash 类型 | 无 | `md5`,`sha1`,`sha256`,`sha512` |
 | `path` | 文件绝对路径 | 无 |参考参数验证说明`require` |
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "hash_name":"sha1",
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "hash_name": "sha1",
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {
-    "hash":"3b84de2d341b3bb66d891b3982e77e8d3bb93d59082e56d236ad897f5e631909"
+  "hash": "3b84de2d341b3bb66d891b3982e77e8d3bb93d59082e56d236ad897f5e631909"
 }
-~~~
-***
-### **接口名称**:`file.getInfo`
+```
+
+---
+
+### `file.getInfo`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 获取文件或者文件信息的`js`方法 |  
-| **备注** | 可以返回文件的相关信息 |  
+| **备注** | 可以返回文件的相关信息 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -74,34 +80,34 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`结果示例**
 
-~~~json
+```json
 {
-    "executable":true,   //是否可执行
-    "is_dir":false,  //是否是文件夹
-    "readable":true,  //是否可读
-    "size":454,  //文件大小,单位字节
-    "update_time":1654441257838.4453,  //更新时间
-    "writable":true  //是否可写
+  "executable": true, //是否可执行
+  "is_dir": false, //是否是文件夹
+  "readable": true, //是否可读
+  "size": 454, //文件大小,单位字节
+  "update_time": 1654441257838.4453, //更新时间
+  "writable": true //是否可写
 }
+```
 
-~~~
+---
 
-***
-### **接口名称**:`file.read`
+### `file.read`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 获取文件内容的`js`方法 |  
-| **备注** | 可以返回文件的内容信息 |  
+| **备注** | 可以返回文件的内容信息 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -110,29 +116,30 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {
-    "content": "dmVyc2lvbjogMC4wLjM5NgpmaWxlczoKICAtIHVybDogWXVhbn…8LQogIDEu5LyY5YyW5oCn6IO9CiAgMi7kv67lpI1idWdzCg=="
-    //文件内容`base64`后的内容,为二进制内容读取内容,请根据需要进行转换
+  "content": "dmVyc2lvbjogMC4wLjM5NgpmaWxlczoKICAtIHVybDogWXVhbn…8LQogIDEu5LyY5YyW5oCn6IO9CiAgMi7kv67lpI1idWdzCg=="
+  //文件内容`base64`后的内容,为二进制内容读取内容,请根据需要进行转换
 }
+```
 
-~~~
-***
-### **接口名称**:`file.write`
+---
+
+### `file.write`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 写入文件内容的`js`方法 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -142,27 +149,29 @@
 |`mode`| 是往后附加,还是全新写入|无|`append|write`|
 **方法参数示例**
 
-~~~json
+```json
 {
-     "content":  "5Y+R55Sf55qE5Y+R55qE", 
-     "path":"C:\\Users\\Admin\\Downloads\\c.png",
-     "mode":"append"
+  "content": "5Y+R55Sf55qE5Y+R55qE",
+  "path": "C:\\Users\\Admin\\Downloads\\c.png",
+  "mode": "append"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {}
-~~~
-***
-### **接口名称**:`file.mkdir`
+```
+
+---
+
+### `file.mkdir`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 创建文件夹的`js`方法 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -171,50 +180,56 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads"
+  "path": "C:\\Users\\Admin\\Downloads"
 }
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {}
-~~~
-***
-### **接口名称**:`file.remove`
+```
+
+---
+
+### `file.remove`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 删除文件的`js`方法 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
 | --- | --- | --- | --- |
-| `path` | 文件绝对路径 | 无 |无  |
+| `path` | 文件绝对路径 | 无 |无 |
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {}
-~~~
-***
-### **接口名称**:`file.getAppHome`
+```
+
+---
+
+### `file.getAppHome`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 获取本应用的工作目录 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -223,24 +238,27 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {}
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {
- "app_home":"C:\\Users\\Shandawei\\.yzb\\app-data\\bb8fa894-50c7-4972-9527-bb12f15ae918\\123456"
+  "app_home": "C:\\Users\\Shandawei\\.yzb\\app-data\\bb8fa894-50c7-4972-9527-bb12f15ae918\\123456"
 }
-~~~
-***
-### **接口名称**:`file.showItemInFolder`
+```
+
+---
+
+### `file.showItemInFolder`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 在文件浏览器中显示文件或者文件夹 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -249,26 +267,27 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {}
-~~~
+```
 
-***
-### **接口名称**:`file.openPath`
+---
+
+### `file.openPath`
+
 **主要描述**
-| 主键          | 值                         |
+| 主键 | 值 |
 | ------------- | ------------------- |
 | **接口描述:** | 打开特定文件或者文件夹 |  
-| **备注** | 无 |  
+| **备注** | 无 |
 
 **参数验证说明**
 | 参数 | 说明| 默认值 | 验证规则 |
@@ -277,15 +296,14 @@
 
 **方法参数示例**
 
-~~~json
+```json
 {
-   "path":"C:\\Users\\Admin\\Downloads\\c.png"
+  "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-
-~~~
+```
 
 **方法回调`next`参数示例**
 
-~~~json
+```json
 {}
-~~~
+```

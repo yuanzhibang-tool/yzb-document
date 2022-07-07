@@ -1,6 +1,6 @@
 ---
 
-### **接口名称**:`preview.showImage`
+### `preview.showImage`
 
 **主要描述**
 
@@ -33,7 +33,7 @@
 
 ---
 
-### **接口名称**:`preview.showPdf`
+### `preview.showPdf`
 
 **主要描述**
 
