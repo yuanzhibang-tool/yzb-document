@@ -25,11 +25,16 @@
                 return time;
             },
             onlyCover: true,
+            relativePath: false,
             name: 'yuanzhibang.com',
             nameLink: 'https://yuanzhibang.com',
             repo: 'https://github.com/yuanzhibang-tool/yzb-document',
             // logo: '/_media/icon.svg',
             loadSidebar: true,
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
+                '/.*/_navbar.md': '/_navbar.md'
+            },
             externalLinkTarget: '_self',
             subMaxLevel: 1,
             maxLevel: 4,
@@ -91,7 +96,6 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
