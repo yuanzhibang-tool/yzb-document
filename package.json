@@ -2,9 +2,9 @@
   "name": "yzb-document",
   "version": "1.0.0",
   "description": "猿之棒相关文档",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "docsify serve",
+    "merge-to-main": "yzb-merge-main"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yuanzhibang-tool/yzb-document#readme",
   "devDependencies": {
+    "@yuanzhibang/cli": "^0.0.15",
     "docsify": "^4.12.2"
   }
 }
