@@ -21,7 +21,7 @@
 
 ```json
 {
-  "status": 2000,
+  "status": "2000",
   "message": "ok",
   "data": ["user/send_app_message"]
 }
@@ -31,7 +31,7 @@
 
 ```json
 {
-  "status": 4102,
+  "status": "4102",
   "message": "authorization_code is invalid",
   "data": []
 }
@@ -58,12 +58,12 @@
 
 ```json
 {
-  "status": 2000,
+  "status": "2000",
   "message": "ok",
   "data": {
     "nick": "天使",
-    "avatar": "https://avatar.dd.david-health.cn/file/2019-07-21/0B4C96B3-DD62-47F9-B9BF-080CAF090DBA.jpeg",
-    "sex": "1"
+    "avatar": "https://upload.yuanzhibang.com/file/2019-07-21/0B4C96B3-DD62-47F9-B9BF-080CAF090DBA.jpeg",
+    "sex": "1" //1男,2女,3未知
   }
 }
 ```
@@ -72,7 +72,7 @@
 
 ```json
 {
-  "status": 4102,
+  "status": "4102",
   "message": "authorization_code is invalid",
   "data": []
 }
