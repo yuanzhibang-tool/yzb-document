@@ -2,7 +2,7 @@
 
 - [开发指南](guide.md)
 - [更新日志](release-note/default.md)
-- [开发前必读](default.md)
+- [开发前必读](before-develop/default.md)
   - [总览](before-develop/summary.md)
   - [概念](before-develop/concept.md)
   - [应用能力](before-develop/ability.md)
