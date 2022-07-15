@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](release-note/default.md)
+- [开发指南](guide.md)
 - [更新日志](release-note/default.md)
 - [开发前必读](default.md)
   - [总览](before-develop/summary.md)
