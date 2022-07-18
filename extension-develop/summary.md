@@ -1,25 +1,15 @@
-!> 拓展是基于`node`框架,用以延展开放平台应用能力的`node`程序包, 猿之棒拓展遵从以下规范
+拓展开发的`quick-start`项目
 
-### 1.拓展使用`zip`压缩包发布
+### 基于`typescript`的快速开始项目
 
-> `zip`文件的根目录为应用根目录
+[yzb-extension-quickstart-ts](https://github.com/yuanzhibang-tool/yzb-extension-quickstart-ts.git)
 
-### 2.拓展入口统一为`index.js`
+已配置 `jest` 单元测试
 
-> 猿之棒会在用户调用拓展后自动执行 index.js,没有 index.js 将会无法执行
+---
 
-### 3.拓展的运行依赖`node_modules`应该完全安装好
+### 基于`javascript`的快速开始项目
 
-> 如果您的项目依赖于第三方的包,缺少这些包将会造成拓展无法运行
+[yzb-extension-quickstart-js](https://github.com/yuanzhibang-tool/yzb-extension-quickstart-js.git)
 
-### 4.拓展应该至少依赖于 [@yuanzhibang/node](https://www.npmjs.com/package/@yuanzhibang/node),来完成生命周期事件发送,提高拓展开发效率
-
-> 拓展必须实现几个生命周期方法来实现渲染对拓展业务的同步.
-
-### 5.拓展必须依以下约定发送生命周期消息
-
-![生命周期消息](../images/20220718185810.jpg ':size=500')
-
-### 6.请勿在未说明的情况下获取用户的隐私,以及其他私密信息
-
-!>请程序猿们关注在自身实现的业务上,不要获取没有必要的信息
+已配置 `jest` 单元测试

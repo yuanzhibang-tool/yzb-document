@@ -17,8 +17,6 @@
   - [公共拓展](resource/public-extension.md)
   - [教程](resource/article.md)
   - [其他](resource/other.md)
-- [常见问题?](question/default.md)
-  - [如何安装指定版本的 node?](question/how-to-install-node-version-specified.md)
 - [支持](support/default.md)
   - [自助服务群](support/group-chat.md)
   - [社区](support/community.md)
