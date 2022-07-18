@@ -1,6 +1,4 @@
-### 用户通过 app.openModal 打开新的 modal 窗口
-
-> 该窗口从中无法使用`bridge yzb`注入的对象,但是注入了一个名为`modalHelper`的全局对象.
+> 用户通过 app.openModal 打开新的 modal 窗口,该窗口从中无法使用`bridge yzb`注入的对象,但是注入了一个名为`modalHelper`的全局对象.
 
 ---
 
