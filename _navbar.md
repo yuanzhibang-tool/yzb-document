@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-- Getting started
+<!-- - Getting started
 
   - [Quick start](quickstart.md)
   - [Writing more pages](more-pages.md)
@@ -9,4 +9,4 @@
 
 - Configuration
   - [:cn:](/zh-cn/)
-  - [:us:](/)
+  - [:us:](/) -->
