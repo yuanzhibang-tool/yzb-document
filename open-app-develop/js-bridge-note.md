@@ -4,7 +4,7 @@
 
 #### JS 库最新版本,支持 cdn 加速
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.19.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.25.js`
 
 _重要说明_
 
@@ -19,5 +19,5 @@ _重要说明_
 | `minor`  | 子版本更新,会包含部门接口的添加,不会影响现有接口的调用                  |
 | `patch`  | 开发者无需关注,仅会涉及到普通问题修复和热更新,不会影响接口调用          |
 
-> 0.0.19
+> 0.0.25
 > 发布初始化版本
