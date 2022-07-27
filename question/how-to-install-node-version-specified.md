@@ -1,6 +1,6 @@
 > 如果您需要使用到多版本,请使用 `nvm` 进行多版本 `node` 管理
 
-#### Windows
+### Windows
 
 _直接安装:_
 
@@ -20,7 +20,7 @@ nvm install 16.9.1
 nvm use 16.9.1
 ```
 
-#### macOS
+### macOS
 
 _直接安装:_
 
@@ -55,4 +55,28 @@ nvm install 16.9.1
 nvm use 16.9.1
 ```
 
-#### Linux
+### Linux
+
+_shell 安装_
+
+1. 安装`node`源
+2. 安装
+
+```shell
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+apt-get install -y nodejs # 其他系统请使用对应的安卓命令
+```
+
+_nvm 安装_
+
+1. 安装`nvm`
+2. 使用`nvm install`安装指定版本的`node`
+3. 使用`nvm use` 设置使用的`node`版本
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# 安装16.9.1版本的 node
+nvm install 16.9.1
+# 切换到16.9.1版本的 node
+nvm use 16.9.1
+```
