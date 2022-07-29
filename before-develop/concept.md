@@ -10,7 +10,7 @@
 
 ### 拓展
 
-> 通过使用`node.js`开发拥有丰富原生能力的应用,为开放平台应用提供更加丰富的能力,拓展开发具有自己的规范,具体请参见[拓展开发](https://doc.yuanzhibang.com/#/extension-develop/default)章节
+> 通过使用`node.js`开发拥有丰富原生能力的应用,为开放平台应用提供更加丰富的能力,拓展开发具有自己的规范,具体请参见[拓展开发](/#/extension-develop/default ':ignore')章节
 
 ### 公共拓展
 

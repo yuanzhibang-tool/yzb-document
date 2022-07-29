@@ -2,7 +2,7 @@
 
 ### `native.run`
 
-!>请注意,运行的可执行程序分成几类,1.运行本地可执行文件(如本地 exe);2.本地 js 文件,客户端会根据 js 后缀通过`node child_process中的spawn`来运行程序,会新建一个新的`node v8引擎`具体请参照 node 官方文档[点击](https://nodejs.org/api/child_process.html);3.在开放平台上传的可执行程序,由猿之棒进行分发,使用 exe_id 进行自动下载并执行;4.开发的猿之棒 extension,会通过猿之棒分发下载并执行,具体请参照,拓展开发;5.脚本内容
+!>请注意,运行的可执行程序分成几类,1.运行本地可执行文件(如本地 exe);2.本地 js 文件,客户端会根据 js 后缀通过`node child_process中的spawn`来运行程序,会新建一个新的`node v8引擎`具体请参照 node 官方文档<a href="https://nodejs.org/api/child_process.html" target="_blank">点击</a>;3.在开放平台上传的可执行程序,由猿之棒进行分发,使用 exe_id 进行自动下载并执行;4.开发的猿之棒 extension,会通过猿之棒分发下载并执行,具体请参照,拓展开发;5.脚本内容
 
 **主要描述**
 
@@ -93,7 +93,7 @@ _使用`exe_id`运行开放平台分发的可执行程序_
 
 !>该参数中的`next`回调将会在消息触发等操作下一直有效,若一个应用运行多个可执行程序,也会都在该处进行回调.
 
-!>为优化发送消息和接收回调消息,我们提供了[@yuanzhibang/renderer](https://www.npmjs.com/package/@yuanzhibang/renderer)开发组件,提高渲染进程部分进程通信效率,具体请参照,开发组件`readme`和开发`demo`
+!>为优化发送消息和接收回调消息,我们提供了<a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a>开发组件,提高渲染进程部分进程通信效率,具体请参照,开发组件`readme`和开发`demo`
 
 **主要描述**
 
@@ -155,7 +155,7 @@ _使用`exe_id`运行开放平台分发的可执行程序_
 
 ### `native.sendProcessMessage`
 
-!>为优化发送消息和接收回调消息,我们提供了[@yuanzhibang/renderer](https://www.npmjs.com/package/@yuanzhibang/renderer)开发组件,提高渲染进程部分进程通信效率进,具体请参照,开发组件`readme`和开发`demo`
+!>为优化发送消息和接收回调消息,我们提供了<a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a>开发组件,提高渲染进程部分进程通信效率进,具体请参照,开发组件`readme`和开发`demo`
 
 **主要描述**
 

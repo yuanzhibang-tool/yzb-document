@@ -18,4 +18,4 @@
 
 ![](../images/20220716042036.jpg ':size=500')
 
-!>我们在[开发加速](https://doc.yuanzhibang.com/#/server-develop/develop-speed-up)提供了 `docker` 一键部署,以及[阿里云函数计算(FC)](https://fcnext.console.aliyun.com/overview)部署方式以及开源代码.
+!>我们在[开发加速](/#/server-develop/develop-speed-up ':ignore')提供了 `docker` 一键部署,以及<a href="https://fcnext.console.aliyun.com/overview" target="_blank">阿里云函数计算(FC)</a>部署方式以及开源代码.

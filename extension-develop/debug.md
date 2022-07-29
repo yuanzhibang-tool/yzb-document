@@ -1,6 +1,6 @@
-!> 为了统一方便调试,请使用 `vscode` 进行开发调试,本章节的所有调试功能,均基于`vscode`说明,基于 [yzb-extension-quickstart-ts](https://github.com/yuanzhibang-tool/yzb-extension-quickstart-ts.git).如有问题请加群讨论.
+!> 为了统一方便调试,请使用 `vscode` 进行开发调试,本章节的所有调试功能,均基于`vscode`说明,基于 <a href="https://github.com/yuanzhibang-tool/yzb-extension-quickstart-ts.git" target="_blank">yzb-extension-quickstart-ts</a>.如有问题请加群讨论.
 
-_注意:请确保您的系统已安装好 node 环境,请使用 16 版本以上的 node,可以参考[如何安装指定版本的 node?](https://doc.yuanzhibang.com/#/question/how-to-install-node-version-specified)_
+_注意:请确保您的系统已安装好 node 环境,请使用 16 版本以上的 node,可以参考[如何安装指定版本的 node?](/#/question/how-to-install-node-version-specified ':ignore')_
 
 ---
 

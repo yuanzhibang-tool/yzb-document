@@ -32,4 +32,4 @@ _返回值说明_
 
 ---
 
-> 状态码请参照 [返回状态码说明](https://doc.yuanzhibang.com/#/server-develop/status-code)
+> 状态码请参照 [返回状态码说明](/#/server-develop/status-code ':ignore')

@@ -12,7 +12,7 @@
 
 > 如果您的项目依赖于第三方的包,缺少这些包将会造成拓展无法运行
 
-### 4.拓展应该至少依赖于 [@yuanzhibang/node](https://www.npmjs.com/package/@yuanzhibang/node),来完成生命周期事件发送,提高拓展开发效率
+### 4.拓展应该至少依赖于 <a href="https://www.npmjs.com/package/@yuanzhibang/node" target="_blank">@yuanzhibang/node</a>,来完成生命周期事件发送,提高拓展开发效率
 
 > 拓展必须实现几个生命周期方法来实现渲染对拓展业务的同步.
 
