@@ -9,7 +9,7 @@
 在`html`文件中`header`内引入`js bridge`
 
 ```html
-<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.19.js"></script>
+<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.27.js"></script>
 <script>
 // 引入后设置ready回调
 yzb.ready(
