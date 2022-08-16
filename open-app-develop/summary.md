@@ -78,4 +78,4 @@ var containerVersion = yzb.containerVersion;
 | file         | `file.getAppHome`           | 是                   | 否                   | 获取应用数据目录                                          |
 | file         | `file.showItemInFolder`     | 是                   | 否                   | 在文件管理器/Finder/其他文件管理器中显示文件/文件夹       |
 | file         | `file.openPath`             | 是                   | 是                   | 打开文件夹或者文件                                        |
-| config       | `config.get`                | 是                   | 是                   | 获取在线配置,容器版本`1.3.0`添加,添加配置请在开放平台添加 |
+| config       | `config.get`                | 是                   | 否                   | 获取在线配置,容器版本`1.3.0`添加,添加配置请在开放平台添加 |
