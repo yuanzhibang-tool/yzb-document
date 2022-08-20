@@ -1,8 +1,8 @@
-## 最新的 bridge 版本 `v0.0.28`
+## 最新的 bridge 版本 `v0.0.29`
 
 ---
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.28.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.29.js`
 
 更新日志:
 
