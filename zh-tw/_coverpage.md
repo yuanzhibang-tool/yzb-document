@@ -2,13 +2,13 @@
 
 ![logo](_media/icon.svg)
 
-# 猿之棒文档
+# 猿之棒文檔
 
-> 开发者工具平台!
+> 開發者工具平台!
 
-- 开放平台应用开发
-- 拓展开发
+- 開放平台應用開發
+- 拓展開發
 - 工具商店
 
 <a href="https://github.com/yuanzhibang-tool/yzb-document/" target="_blank">GitHub</a>
-[开始吧!](get_started)
+[開始吧!](get_started)

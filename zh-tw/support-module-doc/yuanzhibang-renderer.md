@@ -1,8 +1,8 @@
 # @yuanzhibang/renderer <!-- {docsify-ignore} -->
 
-用来进行猿之棒开放平台拓展的调试工具,模拟 renderer 进程和 node 进行进行通信以及回调
+用來進行猿之棒開放平台拓展的調試工具,模擬 renderer 進程和 node 進行進行通信以及回調
 
-**仓库地址:**
+**倉庫地址:**
 
 https://github.com/yuanzhibang-tool/yzb-renderer.git
 
@@ -14,7 +14,7 @@ https://github.com/yuanzhibang-tool/yzb-renderer/issues
 
 https://www.npmjs.com/package/@yuanzhibang/renderer
 
-## 安装
+## 安裝
 
 `npm i @yuanzhibang/renderer --save-dev`
 或者

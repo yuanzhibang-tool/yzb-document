@@ -1,28 +1,28 @@
-### 如何生成`core.config`中需要的签名信息
+### 如何生成`core.config`中需要的簽名信息
 
-!>由于这里需要使用到`js_ticket`,属于安全信息,请务必在服务器端计算通过接口返回给页面
-欢迎提供其他平台计算`sign`的计算代码
+!>由於這裡需要使用到`js_ticket`,屬於安全信息,請務必在服務器端計算通過接口返回給頁面
+歡迎提供其他平台計算`sign`的計算代碼
 
 ---
 
-**php 代码示例**
+**php 代碼示例**
 
 ```php
-//! 使用此规则生成core.config中需要的信息
-$jsTicket = "a4dcdk";  //此值从redis中获取定时获取的应用对应的js_ticket;
-$noncestr = "1234";  //此为随机生成的字符串,最长为128个字符串;
-$timestamp = time(); //1654850924,此为当前的时间unix戳,仅到秒为10位正整数.
-$url = "https://yuanzhibang.com/a/b"; //此为当前页面的url,为去除掉锚点和参数的部分,如果最后为/结尾则去掉
+//! 使用此規則生成core.config中需要的信息
+$jsTicket = "a4dcdk";  //此值從redis中獲取定時獲取的應用對應的js_ticket;
+$noncestr = "1234";  //此為隨機生成的字符串,最長為128個字符串;
+$timestamp = time(); //1654850924,此為當前的時間unix戳,僅到秒為10位正整數.
+$url = "https://yuanzhibang.com/a/b"; //此為當前頁面的url,為去除掉錨點和參數的部分,如果最後為/結尾則去掉
 $signString = "js_ticket=" . $jsTicket . "&nonce_str=" . $noncestr  . "&timestamp=" . $timestamp . "&url=" . $url;
 // 按照以上的值,生成的$signString="js_ticket=a4dcdk&nonce_str=1234&timestamp=1654850924&url=https://yuanzhibang.com/a/b";
-// 计算sha1,此时计算sha1的值为a8cb02e00c2759372954bf5516d110066b911aa4
+// 計算sha1,此時計算sha1的值為a8cb02e00c2759372954bf5516d110066b911aa4
 $sign = sha1($signString );
-// $sign务必为全部小写
+// $sign務必為全部小寫
 ```
 
 ---
 
-**node 代码示例**
+**node 代碼示例**
 
 ```javascript
 
@@ -30,7 +30,7 @@ $sign = sha1($signString );
 
 ---
 
-**java 代码示例**
+**java 代碼示例**
 
 ```java
 
@@ -38,7 +38,7 @@ $sign = sha1($signString );
 
 ---
 
-**python 代码示例**
+**python 代碼示例**
 
 ```python
 
@@ -46,7 +46,7 @@ $sign = sha1($signString );
 
 ---
 
-**php 代码示例**
+**php 代碼示例**
 
 ```php
 

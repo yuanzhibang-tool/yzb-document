@@ -1,8 +1,8 @@
 # @yuanzhibang/node <!-- {docsify-ignore} -->
 
-用来进行猿之棒开放平台拓展的调试工具,模拟 renderer 进程和 node 进行进行通信以及回调
+用來進行猿之棒開放平台拓展的調試工具,模擬 renderer 進程和 node 進行進行通信以及回調
 
-**仓库地址:**
+**倉庫地址:**
 
 https://github.com/yuanzhibang-tool/yzb-node.git
 
@@ -14,7 +14,7 @@ https://github.com/yuanzhibang-tool/yzb-node/issues
 
 https://www.npmjs.com/package/@yuanzhibang/node
 
-## 安装
+## 安裝
 
 `npm i @yuanzhibang/node --save-dev`
 或者
@@ -22,4 +22,4 @@ https://www.npmjs.com/package/@yuanzhibang/node
 
 ## 使用
 
-!>`@yuanzhibang/node`该模块仅适用在拓展进程里,该拓展在初始化后,将自动接收`process.on('message')`的消息回调,请勿在拓展进程的其他部位使用`process.on('message')`来配置消息回调,否则可能会造成模块工作异常.
+!>`@yuanzhibang/node`該模塊僅適用在拓展進程裡,該拓展在初始化後,將自動接收`process.on('message')`的消息回調,請勿在拓展進程的其他部位使用`process.on('message')`來配置消息回調,否則可能會造成模塊工作異常.
