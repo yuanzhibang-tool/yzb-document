@@ -1,12 +1,11 @@
 <!-- _navbar.md -->
 
-<!-- - Getting started
+- [Quick start](quickstart.md)
+- [Writing more pages](https://github.com/yuanzhibang-tool)
+- [Custom navbar](custom-navbar.md)
+- [Cover page](cover.md)
 
-  - [Quick start](quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md)
-
-- Configuration
-  - [:cn:](/zh-cn/)
-  - [:us:](/) -->
+- Languages
+  - [En](/)
+  - [简体中文](/zh-cn/)
+  - [繁體中文](/zh-tw/)
