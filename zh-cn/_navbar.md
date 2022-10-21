@@ -5,6 +5,6 @@
 - [npm 仓库](https://www.npmjs.com/~yuanzhibang)
 
 - **[简体中文]**
-  - [En](/)
+  - [En](/en/)
   - [简体中文](/zh-cn/)
   - [繁體中文](/zh-tw/)

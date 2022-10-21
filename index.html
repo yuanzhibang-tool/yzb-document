@@ -35,6 +35,34 @@
 </head>
 
 <body>
+    <script>
+        // 处理url跳转
+        var hash = location.hash.substr(2);
+        var first_hash = location.hash.substr(2).split('/')[0];
+        if (first_hash == '') {
+            var user_lang = localStorage.getItem('K_USER_LANGUAGE');
+            if (user_lang) {
+                location.href = `#/${user_lang}/default`;
+            } else {
+                var navigator_lang = navigator.language;
+                if (navigator_lang == 'zh' || navigator_lang == 'zh-Hans') {
+                    location.href = `#/zh-cn/default`;
+                } else if (navigator_lang == 'zh-Hant') {
+                    location.href = `#/zh-tw/default`;
+                }
+                else {
+                    location.href = `#/en/default`;
+                }
+            }
+
+        }
+        window.addEventListener('hashchange', (event) => {
+            var first_hash = location.hash.substr(2).split('/')[0];
+            if (first_hash == 'zh-cn' || first_hash == 'en' || first_hash == 'zh-tw') {
+                localStorage.setItem('K_USER_LANGUAGE', first_hash);
+            }
+        });
+    </script>
     <div id="app">Please wait...</div>
     <script>
         window.$docsify = {
@@ -55,7 +83,13 @@
             // logo: '/_media/icon.svg',
             loadSidebar: true,
             alias: {
-                '/': 'guide.md',
+                '/': 'en/guide.md',
+                '/zh-tw/': 'zh-tw/guide.md',
+                '/zh-cn/': 'zh-cn/guide.md',
+                '/en/': 'en/guide.md',
+                '/zh-tw': 'zh-tw/guide.md',
+                '/zh-cn': 'zh-cn/guide.md',
+                '/en': 'en/guide.md',
             },
             externalLinkTarget: '_blank',
             externalLinkRel: 'noopener',
