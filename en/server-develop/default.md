@@ -1,1 +1,1 @@
-> This chapter is used to introduce server content related development
+> This chapter is used to introduce server related development.
