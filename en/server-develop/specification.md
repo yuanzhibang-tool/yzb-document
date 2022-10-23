@@ -24,11 +24,11 @@
 
 _Return value description_
 
-| primary key | type                          | description                                                                                                                                                  |
-| ----------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `status`    | `Four-digit positive integer` | Current operation status code, used to mark success or error type, 2xxx is success, 4xxx is failure, please refer to the status code description for details |
-| `message`   | `String`                      | User-readable description of the current operation result                                                                                                    |
-| `data`      | `array or dictionary`         | The content returned by the current operation to be obtained, if there is no required parameter, an empty array is returned by default                       |
+| Key       | type                          | description                                                                                                                                                  |
+| --------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `status`  | `Four-digit positive integer` | Current operation status code, used to mark success or error type, 2xxx is success, 4xxx is failure, please refer to the status code description for details |
+| `message` | `String`                      | User-readable description of the current operation result                                                                                                    |
+| `data`    | `array or dictionary`         | The content returned by the current operation to be obtained, if there is no required parameter, an empty array is returned by default                       |
 
 ---
 

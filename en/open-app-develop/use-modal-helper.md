@@ -6,12 +6,12 @@ The user opens a new modal window via app.openModal from which the `bridge yzb` 
 
 ### `modalHelper.getInitData`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                         |
+| Key                        | Value                                                         |
 | -------------------------- | ------------------------------------------------------------- |
 | **Interface description:** | Get the value of `initData` passed in `app.openModal`         |
-| **Remarks**                | You can directly assign values ​​to the synchronous interface |
+| **Note**                   | You can directly assign values ​​to the synchronous interface |
 
 _Example_
 
@@ -23,12 +23,12 @@ var passInitData = modalHelper.getInitData();
 
 ### `modalHelper.cancel`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                                                                         |
+| Key                        | Value                                                                                                                                         |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Interface description:** | Close the modal window and return empty content                                                                                               |
-| **Remarks**                | The `next` passed in `app.openModal` receives a callback, and this method is also triggered if the modal window is closed after losing focus. |
+| **Note**                   | The `next` passed in `app.openModal` receives a callback, and this method is also triggered if the modal window is closed after losing focus. |
 
 _Example_
 
@@ -61,12 +61,12 @@ modalHelper.cancel();
 
 ### `modalHelper.confirm`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                            |
+| Key                        | Value                                                                                            |
 | -------------------------- | ------------------------------------------------------------------------------------------------ |
 | **Interface description:** | Close the modal window and return the content that needs to be called back to the calling window |
-| **Remarks**                | `next` passed in `app.openModal` receives callback parameters                                    |
+| **Note**                   | `next` passed in `app.openModal` receives callback parameters                                    |
 
 _Example_
 

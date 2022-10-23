@@ -4,14 +4,14 @@
 
 ### `core.requestAuthCode`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                  |
+| Key                        | Value                                                                  |
 | -------------------------- | ---------------------------------------------------------------------- |
 | **Interface description:** | Get the js method for login-free `code`                                |
-| **Remarks**                | By calling the `/OAuth2/requestJsAuthCode` method of the open platform |
+| **Note**                   | By calling the `/OAuth2/requestJsAuthCode` method of the open platform |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description      | Default | Validation Rules                                       |
 | ---------- | ---------------- | ------- | ------------------------------------------------------ |
@@ -51,14 +51,14 @@
 
 ### `core.requestAccess`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                           |
+| Key                        | Value                                                           |
 | -------------------------- | --------------------------------------------------------------- |
 | **Interface description:** | Interface for requesting users to grant application permissions |
-| **Remarks**                | Open the interface of setting application permission page       |
+| **Note**                   | Open the interface of setting application permission page       |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description         | Default         | Validation Rules                                                                       |
 | ---------- | ------------------- | --------------- | -------------------------------------------------------------------------------------- |
@@ -99,14 +99,14 @@
 
 !> The parameters required by this interface must be generated on the server side, not on the web page. For specific generation rules, please refer to
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                    |
+| Key                        | Value                                                                    |
 | -------------------------- | ------------------------------------------------------------------------ |
 | **Interface description:** | Inject page configuration information, enable `debug` and verify `jsApi` |
-| **Remarks**                | None                                                                     |
+| **Note**                   | None                                                                     |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters    | Description                                                                                                                                                        | Default | Validation Rules                                                            |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------- |

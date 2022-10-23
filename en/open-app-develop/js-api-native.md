@@ -4,12 +4,12 @@
 
 !> Please note that the executable programs to run are divided into several categories, 1. Running local executable files (such as local exe); 2. Local js files, the client will run the program through spawn in `node child_process` according to the js suffix , a new `node v8 engine` will be created for details, please refer to the official node documentation <a href="https://nodejs.org/api/child_process.html" target="_blank">Click</a>;3. Executable programs uploaded on the open platform are distributed by Ape's Stick, and automatically downloaded and executed using exe_id; 4. The developed Ape's Stick extension will be downloaded and executed through Ape's Stick distribution. For details, please refer to Expansion Development; 5. Script content
 
-**Main Description**
+**Description**
 
-| primary key | value |
+| Key | Value |
 | ------------- | ------------------------ |
 | **Interface description:** | `js` method to run executable |
-| **Remarks** | None |
+| **Note** | None |
 
 **Method parameter example**
 
@@ -60,14 +60,14 @@ _Use `exe_id` to run executable programs distributed by the open platform_
 
 ### `native.stop`
 
-**Main Description**
+**Description**
 
-| primary key                | value                         |
+| Key                        | Value                         |
 | -------------------------- | ----------------------------- |
 | **Interface description:** | `js` method to run executable |
-| **Remarks**                | None                          |
+| **Note**                   | None                          |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description                                         | Default | Validation Rules |
 | ---------- | --------------------------------------------------- | ------- | ---------------- |
@@ -95,14 +95,14 @@ _Use `exe_id` to run executable programs distributed by the open platform_
 
 !>To optimize sending messages and receiving callback messages, we provide <a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a> Develop components to improve the communication efficiency of some processes in the rendering process. For details, please refer to Develop Component `readme` and Develop `demo`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                       |
+| Key                        | Value                                                                                       |
 | -------------------------- | ------------------------------------------------------------------------------------------- |
 | **Interface description:** | Set the `js` method of callback for executable file error, message output information, etc. |
-| **Remarks**                | None                                                                                        |
+| **Note**                   | None                                                                                        |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |
@@ -124,14 +124,14 @@ _Use `exe_id` to run executable programs distributed by the open platform_
 
 ### `native.getProcessInfo`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                    |
+| Key                        | Value                                                                    |
 | -------------------------- | ------------------------------------------------------------------------ |
 | **Interface description:** | The `js` method to get the process information of the executable program |
-| **Remarks**                | None                                                                     |
+| **Note**                   | None                                                                     |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |
@@ -157,14 +157,14 @@ _Use `exe_id` to run executable programs distributed by the open platform_
 
 !>To optimize sending messages and receiving callback messages, we provide <a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a> Develop components to improve the communication efficiency of some processes in the rendering process. For details, please refer to developing components `readme` and developing `demo`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                          |
+| Key                        | Value                                                          |
 | -------------------------- | -------------------------------------------------------------- |
 | **Interface description:** | The `js` method for sending messages to the executable process |
-| **Remarks**                | None                                                           |
+| **Note**                   | None                                                           |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description                                                     | Default | Validation Rules |
 | ---------- | --------------------------------------------------------------- | ------- | ---------------- |
@@ -193,14 +193,14 @@ _Use `exe_id` to run executable programs distributed by the open platform_
 
 ### `native.getNativeInfo`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                         |
+| Key                        | Value                                         |
 | -------------------------- | --------------------------------------------- |
 | **Interface description:** | `js` method to get native related information |
-| **Remarks**                | None                                          |
+| **Note**                   | None                                          |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |

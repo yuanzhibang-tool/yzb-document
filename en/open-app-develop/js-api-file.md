@@ -2,14 +2,14 @@
 
 ### `file.exist`
 
-**Main Description**
+**Description**
 
-| primary key | value |
+| Key | Value |
 | ------------- | ------------------- |
 | **Interface description:** | How to get whether the file exists |
-| **Remarks** | None |
+| **Note** | None |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | --- | --- | --- | --- |
@@ -36,14 +36,14 @@
 
 ### `file.getFileHash`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                    |
+| Key                        | Value                                                    |
 | -------------------------- | -------------------------------------------------------- |
 | **Interface description:** | Get the `js` method of the file `hash`                   |
-| **Remarks**                | Can return `md5`, `sha1`, `sha256`, `sha512` of the file |
+| **Note**                   | Can return `md5`, `sha1`, `sha256`, `sha512` of the file |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters  | Description        | Default | Validation Rules                                       |
 | ----------- | ------------------ | ------- | ------------------------------------------------------ |
@@ -71,14 +71,14 @@
 
 ### `file.getInfo`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                           |
+| Key                        | Value                                           |
 | -------------------------- | ----------------------------------------------- |
 | **Interface description:** | `js` method to get file or file information     |
-| **Remarks**                | Can return the relevant information of the file |
+| **Note**                   | Can return the relevant information of the file |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description        | Default | Validation Rules                                       |
 | ---------- | ------------------ | ------- | ------------------------------------------------------ |
@@ -109,14 +109,14 @@
 
 ### `file.read`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                              |
+| Key                        | Value                                              |
 | -------------------------- | -------------------------------------------------- |
 | **Interface description:** | Get the `js` method of file content                |
-| **Remarks**                | You can return the content information of the file |
+| **Note**                   | You can return the content information of the file |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description        | Default | Validation Rules                                       |
 | ---------- | ------------------ | ------- | ------------------------------------------------------ |
@@ -143,14 +143,14 @@
 
 ### `file.write`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                |
+| Key                        | Value                                |
 | -------------------------- | ------------------------------------ |
 | **Interface description:** | `js` method for writing file content |
-| **Remarks**                | None                                 |
+| **Note**                   | None                                 |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description                                                                         | Default | Validation Rules                                          |
 | ---------- | ----------------------------------------------------------------------------------- | ------- | --------------------------------------------------------- | ------ |
@@ -178,14 +178,14 @@
 
 ### `file.mkdir`
 
-**Main Description**
+**Description**
 
-| primary key                | value                        |
+| Key                        | Value                        |
 | -------------------------- | ---------------------------- |
 | **Interface description:** | `js` method to create folder |
-| **Remarks**                | None                         |
+| **Note**                   | None                         |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description          | Default | Validation Rules |
 | ---------- | -------------------- | ------- | ---------------- |
@@ -209,14 +209,14 @@
 
 ### `file.remove`
 
-**Main Description**
+**Description**
 
-| primary key                | value                          |
+| Key                        | Value                          |
 | -------------------------- | ------------------------------ |
 | **Interface description:** | `js` method for deleting files |
-| **Remarks**                | None                           |
+| **Note**                   | None                           |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description        | Default | Validation Rules |
 | ---------- | ------------------ | ------- | ---------------- |
@@ -240,14 +240,14 @@
 
 ### `file.getAppHome`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                         |
+| Key                        | Value                                         |
 | -------------------------- | --------------------------------------------- |
 | **Interface description:** | Get the working directory of this application |
-| **Remarks**                | None                                          |
+| **Note**                   | None                                          |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |
@@ -271,14 +271,14 @@
 
 ### `file.showItemInFolder`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                          |
+| Key                        | Value                                          |
 | -------------------------- | ---------------------------------------------- |
 | **Interface description:** | Display the file or folder in the file browser |
-| **Remarks**                | None                                           |
+| **Note**                   | None                                           |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description        | Default | Validation Rules |
 | ---------- | ------------------ | ------- | ---------------- |
@@ -302,14 +302,14 @@
 
 ### `file.openPath`
 
-**Main Description**
+**Description**
 
-| primary key                | value                          |
+| Key                        | Value                          |
 | -------------------------- | ------------------------------ |
 | **Interface description:** | Open a specific file or folder |
-| **Remarks**                | None                           |
+| **Note**                   | None                           |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description        | Default | Validation Rules                                       |
 | ---------- | ------------------ | ------- | ------------------------------------------------------ |

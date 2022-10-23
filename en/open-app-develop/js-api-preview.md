@@ -2,14 +2,14 @@
 
 ### `preview.showImage`
 
-**Main Description**
+**Description**
 
-| primary key | value |
+| Key | Value |
 | ------------- | -------------------- |
 | **Interface description:** | `js` method to display image group |
-| **Remarks** | None |
+| **Note** | None |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ------- | ------------ | ------ | -------- |
@@ -35,14 +35,14 @@
 
 ### `preview.showPdf`
 
-**Main Description**
+**Description**
 
-| primary key                | value                      |
+| Key                        | Value                      |
 | -------------------------- | -------------------------- |
 | **Interface description:** | `js` method to display PDF |
-| **Remarks**                | None                       |
+| **Note**                   | None                       |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description                       | Default | Validation Rules |
 | ---------- | --------------------------------- | ------- | ---------------- |

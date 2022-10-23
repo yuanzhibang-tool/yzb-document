@@ -6,14 +6,14 @@
 
 !> This interface has been provided since the container `1.3.0` version
 
-**Main Description**
+**Description**
 
-| primary key                | value                                |
+| Key                        | Value                                |
 | -------------------------- | ------------------------------------ |
 | **Interface description:** | Get the `js` method of configuration |
-| **Remarks**                | None                                 |
+| **Note**                   | None                                 |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description                                                                                           | Default | Validation Rules |
 | ---------- | ----------------------------------------------------------------------------------------------------- | ------- | ---------------- |

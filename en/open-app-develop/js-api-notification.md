@@ -2,14 +2,14 @@
 
 ### `notification.vibrate`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                            |
+| Key                        | Value                                            |
 | -------------------------- | ------------------------------------------------ |
 | **Interface description:** | Call the vibration method                        |
-| **Remarks**                | Call this interface, the whole window will shake |
+| **Note**                   | Call this interface, the whole window will shake |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |
@@ -42,14 +42,14 @@
 
 ### `notification.showToast`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                             |
+| Key                        | Value                                                             |
 | -------------------------- | ----------------------------------------------------------------- |
 | **Interface description:** | How to display toast light tips                                   |
-| **Remarks**                | Information will be prompted on the upper part of the application |
+| **Note**                   | Information will be prompted on the upper part of the application |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | ---------- | ----------- | ------- | ---------------- |

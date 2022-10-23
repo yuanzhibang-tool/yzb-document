@@ -1,25 +1,25 @@
-> Used to quickly implement user list data, where `secure_content` implements `ssl 2048`-bit certificate encryption to ensure data security
+> Used to quickly implement user list data, the `secure_content` will store with `ssl 2048 bit` certificate encryption to ensure data security in the cloud.
 
 ---
 
 ### `list.add`
 
-!> This interface has been provided since the container `1.4.2` version
+!> Supported since the container version `1.4.2`
 
-**Main Description**
+**Description**
 
-| primary key                | value                               |
+| Key                        | Value                               |
 | -------------------------- | ----------------------------------- |
 | **Interface description:** | `js` method for adding list entries |
-| **Remarks**                | None                                |
+| **Note**                   | None                                |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters       | Description                                                                                                                                                                                                              | Default | Validation Rules                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------------------------------------------------------------------------------------------- |
-| `key`            | Set the identification key of the corresponding list                                                                                                                                                                     | None    | English case, number, underline, forward slash, the shortest `1` bit, the longest `1024` bit |
-| `content`        | Sets the corresponding non-secure content, supports objects, and will also be converted to objects when get, and non-objects are directly set to `null`                                                                  | None    | None                                                                                         |
-| `secure_content` | Set the corresponding security content, implement `ssl 2048`-bit certificate encryption to ensure data security, support objects, and will also be converted to objects when get, non-objects are directly set to `null` | None    | None                                                                                         |
+| Parameters       | Description                                                                                                                                                                                                          | Default | Validation Rules                                                                                                     |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| `key`            | Identity of the list                                                                                                                                                                                                 | None    | English case `[A-Za-z]`, number `[0-9]`, underline`[_]`, dash `[-]`, forward slash`[/]`, the length is in `[1,1024]` |
+| `content`        | Normal content, supports json object, and will also be converted to objects when get, and non-objects are directly set to `null`                                                                                     | None    | None                                                                                                                 |
+| `secure_content` | Security content, store with `ssl 2048 bit` certificate encryption to ensure data security in the cloud, support json object, and will also be converted to objects when get, non-objects are directly set to `null` | None    | None                                                                                                                 |
 
 **Method parameter example**
 
@@ -48,20 +48,20 @@
 
 ### `list.delete`
 
-!> This interface has been provided since the container `1.4.2` version
+!> Supported since the container version `1.4.2`
 
-**Main Description**
+**Description**
 
-| primary key                | value                              |
+| Key                        | Value                              |
 | -------------------------- | ---------------------------------- |
 | **Interface description:** | `js` method to delete list entries |
-| **Remarks**                | None                               |
+| **Note**                   | None                               |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters | Description                                                        | Default | Validation Rules                                             |
-| ---------- | ------------------------------------------------------------------ | ------- | ------------------------------------------------------------ |
-| `id`       | The `id` of the corresponding entry, multiple commas are supported | None    | A positive integer, the shortest is `1`, the longest is `11` |
+| Parameters | Description                                                      | Default | Validation Rules                              |
+| ---------- | ---------------------------------------------------------------- | ------- | --------------------------------------------- |
+| `id`       | The `id` of the entry, multiple id split by commas are supported | None    | A positive integer, the length is in `[1,11]` |
 
 **Method parameter example**
 
@@ -81,20 +81,20 @@
 
 ### `list.empty`
 
-!> This interface has been provided since the container `1.4.2` version
+!> Supported since the container version `1.4.2`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                  |
-| -------------------------- | ---------------------------------------------------------------------- |
-| **Interface description:** | The `js` method to clear the list corresponding to a `key` of the user |
-| **Remarks**                | None                                                                   |
+| Key                        | Value                                                             |
+| -------------------------- | ----------------------------------------------------------------- |
+| **Interface description:** | The `js` method to empty the user's list with the specified `key` |
+| **Note**                   | None                                                              |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters | Description                                          | Default | Validation Rules                                                                              |
-| ---------- | ---------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |
-| `key`      | Set the identification key of the corresponding list | None    | English case, number, underscore, forward slash, the shortest `1` bit, the longest `1024` bit |
+| Parameters | Description          | Default | Validation Rules                                                                                                     |
+| ---------- | -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| `key`      | Identity of the list | None    | English case `[A-Za-z]`, number `[0-9]`, underline`[_]`, dash `[-]`, forward slash`[/]`, the length is in `[1,1024]` |
 
 **Method parameter example**
 
@@ -114,22 +114,22 @@
 
 ### `list.update`
 
-!> This interface has been provided since the container `1.4.2` version
+!> Supported since the container version `1.4.2`
 
-**Main Description**
+**Description**
 
-| primary key                | value                               |
-| -------------------------- | ----------------------------------- |
-| **Interface description:** | `js` method for adding list entries |
-| **Remarks**                | None                                |
+| Key                        | Value                                 |
+| -------------------------- | ------------------------------------- |
+| **Interface description:** | `js` method for updating list entries |
+| **Note**                   | None                                  |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters       | Description                                                                                                                                                                                                              | Default | Validation Rules                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------------------------------------------- |
-| `id`             | Corresponding entry `id` key                                                                                                                                                                                             | None    | Positive integer, shortest `1`, longest `11` |
-| `content`        | Set the corresponding non-secure content, support objects, and will also be converted to objects when get, non-objects are directly set to `null`                                                                        | None    | None                                         |
-| `secure_content` | Set the corresponding security content, implement `ssl 2048`-bit certificate encryption to ensure data security, support objects, and will also be converted to objects when get, non-objects are directly set to `null` | None    | None                                         |
+| Parameters       | Description                                                                                                                                                                                                          | Default | Validation Rules                              |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------------------------- |
+| `id`             | The `id` of the entry, multiple id split by commas are supported                                                                                                                                                     | None    | A positive integer, the length is in `[1,11]` |
+| `content`        | Normal content, supports json object, and will also be converted to objects when get, and non-objects are directly set to `null`                                                                                     | None    | None                                          |
+| `secure_content` | Security content, store with `ssl 2048 bit` certificate encryption to ensure data security in the cloud, support json object, and will also be converted to objects when get, non-objects are directly set to `null` | None    | None                                          |
 
 **Method parameter example**
 
@@ -158,21 +158,21 @@
 
 ### `list.getList`
 
-!> This interface is provided after the container `1.4.2` version, and the list is arranged in reverse order according to `id`
+!> Supported since the container version `1.4.2`, and the list is order by `id desc`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                     |
-| -------------------------- | --------------------------------------------------------- |
-| **Interface description:** | Get the `js` method of the list corresponding to the list |
-| **Remarks**                | None                                                      |
+| Key                        | Value                                                |
+| -------------------------- | ---------------------------------------------------- |
+| **Interface description:** | Get the `js` method of the list with specified `key` |
+| **Note**                   | None                                                 |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters     | Description                                                                    | Default | Validation Rules                                                                              |
-| -------------- | ------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------------------------- |
-| `load_more_id` | The corresponding minimum `id` value obtained, the first time `0` is passed in | None    | Positive integer, the shortest `1` bit, the longest `11` bit                                  |
-| `key`          | Set the identification key of the corresponding list                           | None    | English case, number, underscore, forward slash, the shortest `1` bit, the longest `1024` bit |
+| Parameters     | Description                                              | Default | Validation Rules                                                                                                     |
+| -------------- | -------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| `load_more_id` | The minimum `id` in the list you got, use `0` when first | None    | A positive integer, the length is in `[1,11]`                                                                        |
+| `key`          | Set the identification key of the corresponding list     | None    | English case `[A-Za-z]`, number `[0-9]`, underline`[_]`, dash `[-]`, forward slash`[/]`, the length is in `[1,1024]` |
 
 **Method parameter example**
 
@@ -212,20 +212,20 @@
 
 ### `list.getDetail`
 
-!> This interface has been provided since the container `1.4.2` version
+!> Supported since the container version `1.4.2`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                |
+| Key                        | Value                                |
 | -------------------------- | ------------------------------------ |
 | **Interface description:** | `js` method to get list item details |
-| **Remarks**                | None                                 |
+| **Note**                   | None                                 |
 
-**Parameter verification instructions**
+**Parameters**
 
-| Parameters | Description                    | Default | Validation Rules                             |
-| ---------- | ------------------------------ | ------- | -------------------------------------------- |
-| `id`       | Corresponding entry `id` value | None    | Positive integer, shortest `1`, longest `11` |
+| Parameters | Description           | Default | Validation Rules                              |
+| ---------- | --------------------- | ------- | --------------------------------------------- |
+| `id`       | Id of the list entity | None    | A positive integer, the length is in `[1,11]` |
 
 **Method parameter example**
 

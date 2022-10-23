@@ -8,12 +8,12 @@
 
 `yzb.ready`
 
-**Main Description**
+**Description**
 
-| primary key                | value                          |
+| Key                        | Value                          |
 | -------------------------- | ------------------------------ |
 | **Interface description:** | `bridge` ready callback        |
-| **Remarks**                | Proxy method, cannot be called |
+| **Note**                   | Proxy method, cannot be called |
 
 **Example of calling js method natively**
 
@@ -31,12 +31,12 @@ yzb.ready(() => {
 
 `yzb.error`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                  |
+| Key                        | Value                                                                                  |
 | -------------------------- | -------------------------------------------------------------------------------------- |
 | **Interface description:** | `bridge` prepares an error callback                                                    |
-| **Remarks**                | It is recommended to refresh the page after receiving this error, which rarely happens |
+| **Note**                   | It is recommended to refresh the page after receiving this error, which rarely happens |
 
 **Example of calling js method natively**
 

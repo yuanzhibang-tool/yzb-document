@@ -2,14 +2,14 @@
 
 ### `app.close`
 
-**Main Description**
+**Description**
 
-| primary key | value |
+| Key | Value |
 | ------------- | ------------------- |
 | **Interface description:** | Close the `js` method of the current application |
-| **Remarks** | None |
+| **Note** | None |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters | Description | Default | Validation Rules |
 | --- | --- | --- | --- |
@@ -31,14 +31,14 @@
 
 ### `app.showModal`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                              |
+| Key                        | Value                                              |
 | -------------------------- | -------------------------------------------------- |
 | **Interface description:** | `js` method to display new url content using modal |
-| **Remarks**                | None                                               |
+| **Note**                   | None                                               |
 
-**Parameter verification instructions**
+**Parameters**
 
 | Parameters  | Description                                                                                      | Default | Validation Rules                          |
 | ----------- | ------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------- |
@@ -72,12 +72,12 @@
 
 ### `app.setUrlOpenAction`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                                                                 |
+| Key                        | Value                                                                                                                                 |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **Interface description:** | Set the callback interface for opening the application through url, the interface will call back the complete url to the set function |
-| **Remarks**                | None                                                                                                                                  |
+| **Note**                   | None                                                                                                                                  |
 
 **Parameter Description**
 
@@ -94,12 +94,12 @@ yzb.app.setUrlOpenAction((url) => {
 
 ### `app.setVersion`
 
-**Main Description**
+**Description**
 
-| primary key                | value                                                                                          |
+| Key                        | Value                                                                                          |
 | -------------------------- | ---------------------------------------------------------------------------------------------- |
 | **Interface description:** | Set the current application version number, which will be included in the application feedback |
-| **Remarks**                | None                                                                                           |
+| **Note**                   | None                                                                                           |
 
 **Parameter Description**
 
