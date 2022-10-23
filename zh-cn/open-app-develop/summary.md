@@ -6,10 +6,10 @@
 
 ### 引入 js,注入对象
 
-在`html`文件中`header`内引入`js bridge`
+在`html`文件中`header`内引入`js bridge`,最新版查看 [引入 Bridge 说明](zh-cn/open-app-develop/js-bridge-note)
 
 ```html
-<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js"></script>
+<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-vx.x.x.js"></script>
 <script>
 // 引入后设置ready回调
 yzb.ready(

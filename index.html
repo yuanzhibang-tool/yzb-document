@@ -42,16 +42,16 @@
         if (first_hash == '') {
             var user_lang = localStorage.getItem('K_USER_LANGUAGE');
             if (user_lang) {
-                location.href = `#/${user_lang}/default`;
+                location.href = `#/${user_lang}/guide`;
             } else {
                 var navigator_lang = navigator.language;
                 if (navigator_lang == 'zh' || navigator_lang == 'zh-Hans') {
-                    location.href = `#/zh-cn/default`;
+                    location.href = `#/zh-cn/guide`;
                 } else if (navigator_lang == 'zh-Hant') {
-                    location.href = `#/zh-tw/default`;
+                    location.href = `#/zh-tw/guide`;
                 }
                 else {
-                    location.href = `#/en/default`;
+                    location.href = `#/en/guide`;
                 }
             }
 
