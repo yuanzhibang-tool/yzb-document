@@ -1,25 +1,25 @@
-!> 拓展是基于`node`框架,用以延展开放平台应用能力的`node`程序包, 猿之棒拓展遵从以下规范
+!> Extension is a `node` package based on the `node` framework to extend the application capabilities of the open platform. Apezhibang extension complies with the following specifications
 
-### 1.拓展使用`zip`压缩包发布
+### 1. Extensions are published using `zip` archives
 
-> `zip`文件的根目录为应用根目录
+> The root directory of the `zip` file is the application root directory
 
-### 2.拓展入口统一为`index.js`
+### 2. The expansion entry is unified as `index.js`
 
-> 猿之棒会在用户调用拓展后自动执行 `index.js`,没有 `index.js` 将会无法执行
+> Ape's Stick will automatically execute `index.js` after the user calls the extension, without `index.js` it will not be able to execute
 
-### 3.拓展的运行依赖`node_modules`应该完全安装好
+### 3. Extended runtime dependencies `node_modules` should be fully installed
 
-> 如果您的项目依赖于第三方的包,缺少这些包将会造成拓展无法运行
+> If your project depends on third-party packages, the lack of these packages will cause the extension to fail to run
 
-### 4.拓展应该至少依赖于 <a href="https://www.npmjs.com/package/@yuanzhibang/node" target="_blank">@yuanzhibang/node</a>,来完成生命周期事件发送,提高拓展开发效率
+### 4. Extensions should at least depend on <a href="https://www.npmjs.com/package/@yuanzhibang/node" target="_blank">@yuanzhibang/node</a> to complete life Send periodic events to improve development efficiency
 
-> 拓展必须实现几个生命周期方法来实现渲染对拓展业务的同步.
+> Extensions must implement several lifecycle methods to synchronize rendering to extension services.
 
-### 5.拓展必须依以下约定发送生命周期消息
+### 5. Extensions must send lifecycle messages according to the following conventions
 
-![生命周期消息](../images/20220718185810.jpg ':size=500')
+![Lifecycle message](../images/20220718185810.jpg ':size=500')
 
-### 6.请勿在未说明的情况下获取用户的隐私,以及其他私密信息
+### 6. Do not obtain the user's privacy and other private information without instructions
 
-!>请程序猿们关注在自身实现的业务上,不要获取没有必要的信息
+!> Please programmers pay attention to their own business, do not obtain unnecessary information

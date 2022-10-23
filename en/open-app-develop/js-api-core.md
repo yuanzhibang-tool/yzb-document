@@ -1,37 +1,37 @@
-## core 命名空间方法调用文档 <!-- {docsify-ignore} -->
+## core namespace method call documentation <!-- {docsify-ignore} -->
 
-> core 命名空间方法调用相关文档
+> Core namespace method calls related documentation
 
 ### `core.requestAuthCode`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                                |
-| ------------- | ------------------------------------------------- |
-| **接口描述:** | 获取免登陆`code`的 js 方法                        |
-| **备注**      | 通过调用开放平台的`/OAuth2/requestJsAuthCode`方法 |
+| primary key                | value                                                                  |
+| -------------------------- | ---------------------------------------------------------------------- |
+| **Interface description:** | Get the js method for login-free `code`                                |
+| **Remarks**                | By calling the `/OAuth2/requestJsAuthCode` method of the open platform |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数     | 说明     | 默认值 | 验证规则                  |
-| -------- | -------- | ------ | ------------------------- |
-| `app_id` | 应用`id` | 无     | 参考参数验证说明`require` |
-| `tid`    | 团队`id` | 无     | 参考参数验证说明`require` |
+| Parameters | Description      | Default | Validation Rules                                       |
+| ---------- | ---------------- | ------- | ------------------------------------------------------ |
+| `app_id`   | Application `id` | None    | Refer to parameter verification instructions `require` |
+| `tid`      | Team `id`        | None    | Refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```
 {
     "identity": "9100dbeb-95ff-4c03-8355-826b3eaab2b7",
     "data": {
-       "app_id":"100011", //开放平台的app_id
-       "tid":"100027" //如果为团队应用,需要传递该参数,该参数如果是由app进入,会在参数中附加上团队
+       "app_id":"100011", //app_id of the open platform
+       "tid":"100027" //If it is a team application, this parameter needs to be passed. If the parameter is entered by the app, the team will be added to the parameter
      }
 }
 
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```
 {
@@ -43,43 +43,43 @@
 
 ```
 
-!>**注意:**
+!>**Note:**
 
-> 该方法只有`next`回调,没错误回调
+> This method has only `next` callback, no error callback
 
 ---
 
 ### `core.requestAccess`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                         |
-| ------------- | -------------------------- |
-| **接口描述:** | 请求用户授予应用权限的接口 |
-| **备注**      | 打开设置应用权限页面的接口 |
+| primary key                | value                                                           |
+| -------------------------- | --------------------------------------------------------------- |
+| **Interface description:** | Interface for requesting users to grant application permissions |
+| **Remarks**                | Open the interface of setting application permission page       |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数     | 说明     | 默认值     | 验证规则                                                    |
-| -------- | -------- | ---------- | ----------------------------------------------------------- |
-| `app_id` | 应用`id` | 无         | 参考参数验证说明`require`                                   |
-| `access` | 权限列表 | `[]`空数组 | `array`,添加每条权限的验证正则`^[1-9a-zA-Z_-[*]\/]{1,128}$` |
+| Parameters | Description         | Default         | Validation Rules                                                                       |
+| ---------- | ------------------- | --------------- | -------------------------------------------------------------------------------------- |
+| `app_id`   | Application `id`    | None            | Refer to parameter verification instructions `require`                                 |
+| `access`   | list of permissions | `[]`empty array | `array`, add the verification regular of each permission `^[1-9a-zA-Z_-[*]\/]{1,128}$` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```
 {
     "identity": "9100dbeb-95ff-4c03-8355-826b3eaab2b7",
     "data": {
-       "app_id":"100011" //开放平台的app_id,
-       "tid": "100043", //如果是team app必须传递此参数
+       "app_id":"100011" //app_id of the open platform,
+       "tid": "100043", //If it is a team app, this parameter must be passed
        "access": ["team/send_team_message", "team/send_app_message", "team/get_team_member_base_info"]
      }
 }
 
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```
 {
@@ -89,109 +89,109 @@
 
 ```
 
-!>**注意:**
+!>**Note:**
 
-> 该方法只有`next`回调,没错误回调
+> This method has only `next` callback, no error callback
 
 ---
 
 ### `core.config`
 
-!>该接口需要的参数,请务必使用服务器端生成,不要在网页端生成.具体生成规则参照
+!> The parameters required by this interface must be generated on the server side, not on the web page. For specific generation rules, please refer to
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                          |
-| ------------- | ------------------------------------------- |
-| **接口描述:** | 注入页面配置信息,开启`debug`以及验证`jsApi` |
-| **备注**      | 无                                          |
+| primary key                | value                                                                    |
+| -------------------------- | ------------------------------------------------------------------------ |
+| **Interface description:** | Inject page configuration information, enable `debug` and verify `jsApi` |
+| **Remarks**                | None                                                                     |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数          | 说明                                                                                 | 默认值  | 验证规则                                                               |
-| ------------- | ------------------------------------------------------------------------------------ | ------- | ---------------------------------------------------------------------- |
-| `app_id`      | 应用`id`                                                                             | 无      | 参考参数验证说明`require`                                              |
-| `timestamp`   | 时间戳                                                                               | 无      | `require;int;length:10,11`                                             |
-| `nonce_str`   | 随机字符串                                                                           | 无      | `require;length:4,128`                                                 |
-| `signature`   | 签名值                                                                               | 无      | `require;length:4,128`,正则`^[a-zA-Z0-9_-]{4,128}$`                    |
-| `debug`       | 本参数,当前无需处理,不必获取,是否开启`debug`模式,开启后返回结果和错误将会弹出`alert` | `false` | `bool`                                                                 |
-| `js_api_list` | 需要验证的`js_api_list`                                                              | 无      | `require;array;array*min_length:1`,正则`^[1-9a-zA-Z*-[\*][.]]{1,128}$` |
-| `is_spa`      | `是否是单页面应用`                                                                   | `false` | `bool`                                                                 |
+| Parameters    | Description                                                                                                                                                        | Default | Validation Rules                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------- |
+| `app_id`      | Application `id`                                                                                                                                                   | None    | Refer to parameter verification instructions `require`                      |
+| `timestamp`   | timestamp                                                                                                                                                          | none    | `require;int;length:10,11`                                                  |
+| `nonce_str`   | random string                                                                                                                                                      | none    | `require;length:4,128`                                                      |
+| `signature`   | Signature value                                                                                                                                                    | None    | `require;length:4,128`,regular `^[a-zA-Z0-9_-]{4,128}$`                     |
+| `debug`       | This parameter does not need to be processed or obtained at present. Whether the `debug` mode is enabled or not, the returned result and error will pop up `alert` | `false` | `bool`                                                                      |
+| `js_api_list` | `js_api_list` to be verified                                                                                                                                       | None    | `require;array;array*min_length:1`,regular `^[1-9a-zA-Z*-[\*][.]]{1,128} $` |
+| `is_spa`      | `Single page application`                                                                                                                                          | `false` | `bool`                                                                      |
 
-**方法参数示例**
+**Method parameter example**
 
 ```
 {
-	"data": {
-		"app_id": "101000", //开放平台的`app_id`,
-                "tid": "100027", //团队的`tid`
-		"timestamp": 1544579311, //注意为数字类型,生成签名的时间戳,为`unix timestamp`,只精确到秒
-		"nonce_str": "fasdfwHlhHLJ", //随机字符串
-		"signature": "ba0dc6903b0f5ce48a1519604256aec7306ffb5a", //签名值
-		"debug": true, //本参数,当前无需处理,不必获取,是否开启`debug`模式,开启后返回结果和错误将会弹出`alert`,默认是`false`
-		"js_api_list": ["tool.cache.set", "tool.cache.get"] //需要验证的js_api_list
-	},
-	"identity": "core_config_c8f9a3e3_3bba_4fbe_a130_86208116d31c"
+"data": {
+"app_id": "101000", //The `app_id` of the open platform,
+                "tid": "100027", //The `tid` of the team
+"timestamp": 1544579311, //Note that it is a digital type, and the timestamp that generates the signature is `unix timestamp`, which is only accurate to seconds
+"nonce_str": "fasdfwHlhHLJ", //random string
+"signature": "ba0dc6903b0f5ce48a1519604256aec7306ffb5a", //signature value
+"debug": true, //This parameter does not need to be processed at present, no need to obtain, whether to enable `debug` mode, after the return result and error will pop up `alert`, the default is `false`
+"js_api_list": ["tool.cache.set", "tool.cache.get"] //js_api_list that needs to be verified
+},
+"identity": "core_config_c8f9a3e3_3bba_4fbe_a130_86208116d31c"
 }
 
 ```
 
-**返回值示例**
+**Example of return value**
 
-_成功后回调的`next`_
+_The `next`_ called back after success
 
 ```
 {
     "identity": "core_config_c8f9a3e3_3bba_4fbe_a130_86208116d31c",
-    "result": {//注意此处无任何参数
+    "result": {//Note that there are no parameters here
     }
 }
 
 ```
 
-_以及错误回调_
+_and error callback_
 
-`网络错误回调`(当原生调用出现接口网络错误时,非`200`错误,是网络级别的错误)
+`Network error callback` (when the native call has an interface network error, it is not a `200` error, it is a network level error)
 
 ```
 
 {
     "identity": "core_config_c8f9a3e3_3bba_4fbe_a130_86208116d31c",
-    "result": {//注意此处无任何参数
+    "result": {//Note that there are no parameters here
         "code": "100002",
-		"description": "网络错误",
-        "suggestion": "请检查网络状态"
+"description": "Network error",
+        "suggestion": "Please check the network status"
     }
 }
 
 
 ```
 
-`网络调用出错回调`(当原生调用出现接口出现返回接口数据错误时,`status`非`2000`错误,是返回结果错误层级)
+`Network call error callback` (When the native call has an interface return interface data error, `status` is not `2000` error, it is the return result error level)
 
 ```
 
 {
     "identity": "core_config_c8f9a3e3_3bba_4fbe_a130_86208116d31c",
-    "result": {//注意此处无任何参数
+    "result": {//Note that there are no parameters here
         "code": "100003",
-		"description": "core.config参数验证失败",
-        "suggestion": "请检查core.config参数"
+"description": "core.config parameter validation failed",
+        "suggestion": "Please check core.config parameters"
     }
 }
 
 
 ```
 
-`当调用需要验证的,但是没有经过验证的方法的时候`调用的错误,是在调用该验证的方法的时候使用的,**不是在该方法中使用的**
+`When calling a method that needs to be verified, but there is no verified method` The error of the call is used when calling the verified method, **not used in this method**
 
 ```
 {
     "identity": "cache_set_c8f9a3e3_3bba_4fbe_a130_86208116d31c",
-    "result": {//注意此处无任何参数
+    "result": {//Note that there are no parameters here
         "code": "100004",
-		"description": "该javascrip函数未使用core.config配置",
-        "suggestion": "请使用该core.config函数进行配置"
+"description": "The javascript function is not configured using core.config",
+        "suggestion": "Please use this core.config function to configure"
     }
 }
 ```

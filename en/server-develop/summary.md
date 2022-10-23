@@ -1,9 +1,9 @@
-## 接口域名:
+## Interface domain name:
 
 `https://oauth.yuanzhibang.com`
 
-!>由于安全性原因,必须使用`https`进行访问,`http`协议无法访问
+!> For security reasons, `https` must be used to access, `http` protocol cannot be accessed
 
-## 接口调用相关流程
+## Interface call related process
 
-![接口调用流程](../images/1658135684767.jpg ':size=500')
+![Interface call process](../images/1658135684767.jpg ':size=500')

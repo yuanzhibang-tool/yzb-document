@@ -1,20 +1,20 @@
-### 工作流程
+### work process
 
-> 请参照流程图
+> Please refer to the flowchart
 
 ![](../images/screenshot_1654686997675.png)
 
-### 引入 js,注入对象
+### Introduce js, inject objects
 
-在`html`文件中`header`内引入`js bridge`
+Introduce `js bridge` inside `header` in `html` file
 
 ```html
 <script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js"></script>
 <script>
-// 引入后设置ready回调
+// Set ready callback after introduction
 yzb.ready(
 ()=>{
-    // 在回调中配置
+    // configure in callback
     var configData = {};
     yzb.core.config(configData);
 }
@@ -22,21 +22,21 @@ yzb.ready(
 <script>
 ```
 
-> 注入对象名为 yzb,所有方法和属性均在该注入对象上.
+> The injected object is named yzb, and all methods and properties are on the injected object.
 
 ---
 
-### 变量列表
+### variable list
 
-!>所有版本号信息均为`0.0.0`格式,遵从`major.minor.patch`版本格式发布,`major`为重大更新版本包含`break change`,变动较大,调用过程需要注意.`minor`为小更新,无需关注 api 变更,仅添加 api,除非必要,不会对原有接口进行变更,`patch`仅仅进行`bug`修复.
+!> All version number information is in `0.0.0` format, released in accordance with the `major.minor.patch` version format, `major` is a major update version including `break change`, the changes are large, the calling process needs to be paid attention to.` minor` is a small update, no need to pay attention to api changes, only add api, unless necessary, will not make changes to the original interface, `patch` only fixes `bug`.
 
-| 变量名称           | 描述                                                                     |
-| ------------------ | ------------------------------------------------------------------------ |
-| `version`          | 获取当前注入`js bridge`的版本号                                          |
-| `appVersion`       | 获取桌面端应用的版本号                                                   |
-| `containerVersion` | 获取桌面端容器的版本号,一般所有接口和该值相关,有更新也会更新该容器版本号 |
+| variable name      | description                                                                                                                                                                 |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `version`          | Get the version number currently injected into `js bridge`                                                                                                                  |
+| `appVersion`       | Get the version number of the desktop application                                                                                                                           |
+| `containerVersion` | Get the version number of the desktop container, generally all interfaces are related to this value, and the container version number will be updated if there is an update |
 
-**示例**
+**Example**
 
 ```javascript
 var containerVersion = yzb.containerVersion;
@@ -44,38 +44,37 @@ var containerVersion = yzb.containerVersion;
 
 ---
 
-### API 列表
+### API List
 
-!> 需要验证的原则,一个是会影响页面操作,一个是会有安全疑虑.
-
-| 命名空间     | 方法名称                    | 是否需要`config`验证 | 使用弹出窗口用户确认 | 描述                                                      |
-| ------------ | --------------------------- | -------------------- | -------------------- | --------------------------------------------------------- |
-| core         | `core.config`               | 否                   | 否                   | 用来注入页面配置信息,开启`debug`以及验证`jsApi`           |
-| core         | `core.requestAuthCode`      | 是                   | 否                   | 获取免登陆`code`的 js 方法                                |
-| core         | `core.requestAccess`        | 是                   | 否                   | 配置验证上述需要验证的`js`方法,并获取`open_id`            |
-| app          | `app.close`                 | 是                   | 否                   | 关闭容器页面                                              |
-| app          | `app.setUrlOpenAction`      | 否                   | 否                   | 设置通过外部 url 打开应用将传入的完整 url 传给应用        |
-| app          | `app.showModal`             | 是                   | 否                   | 打开 modal 窗口                                           |
-| notification | `notification.vibrate`      | 是                   | 否                   | 晃动窗口                                                  |
-| preview      | `preview.showImage`         | 是                   | 是                   | 打开图片播放器                                            |
-| preview      | `preview.showPDF`           | 是                   | 是                   | pdf 展示器                                                |
-| setting      | `setting.set`               | 是                   | 否                   | 设置应用配置                                              |
-| setting      | `setting.get`               | 是                   | 否                   | 获取应用配置                                              |
-| setting      | `setting.remove`            | 是                   | 否                   | 移除应用配置                                              |
-| native       | `native.run`                | 是                   | 是                   | 运行原生二进制程序                                        |
-| native       | `native.stop`               | 是                   | 否                   | 停止运行的原生二进制程序                                  |
-| native       | `native.setCallback`        | 是                   | 否                   | 设置原生二进制程序各类消息回调                            |
-| native       | `native.getProcessInfo`     | 是                   | 否                   | 获取进程信息                                              |
-| native       | `native.sendProcessMessage` | 是                   | 否                   | 向进程发送原生`message`信息                               |
-| native       | `native.getNativeInfo`      | 是                   | 否                   | 获取原生相关信息                                          |
-| file         | `file.exist`                | 是                   | 否                   | 判断文件是否存在                                          |
-| file         | `file.getFileHash`          | 是                   | 否                   | 获取文件的 hash 值                                        |
-| file         | `file.getInfo`              | 是                   | 否                   | 获取文件/文件夹的信息                                     |
-| file         | `file.read`                 | 是                   | 是                   | 读取文件                                                  |
-| file         | `file.write`                | 是                   | 是                   | 写入文件                                                  |
-| file         | `file.mkdir`                | 是                   | 是                   | 创建目录                                                  |
-| file         | `file.remove`               | 是                   | 是                   | 移除文件/文件夹                                           |
-| file         | `file.getAppHome`           | 是                   | 否                   | 获取应用数据目录                                          |
-| file         | `file.showItemInFolder`     | 是                   | 否                   | 在文件管理器/Finder/其他文件管理器中显示文件/文件夹       |
-| file         | `file.openPath`             | 是                   | 是                   | 打开文件夹或者文件                                        |
-| config       | `config.get`                | 是                   | 否                   | 获取在线配置,容器版本`1.3.0`添加,添加配置请在开放平台添加 |
+!> The principles that need to be verified, one is that it will affect the operation of the page, and the other is that there will be security concerns.
+| namespace | method name | whether `config` validation is required | user confirmation using popup | description |
+| ------------ | ----------------------------- | -------- ------------ | -------------------- | ---------------- ----------------------------------------- |
+| core | `core.config` | No | No | Used to inject page configuration information, enable `debug` and verify `jsApi` |
+| core | `core.requestAuthCode` | yes | no | js method to get login-free `code` |
+| core | `core.requestAccess` | Yes | No | Configure the `js` method that needs to be verified above, and get the `open_id` |
+| app | `app.close` | yes | no | close the container page |
+| app | `app.setUrlOpenAction` | no | no | set open app via external url pass the incoming full url to the app |
+| app | `app.showModal` | yes | no | open modal window |
+| notification | `notification.vibrate` | yes | no | shake window |
+| preview | `preview.showImage` | yes | yes | open image player |
+| preview | `preview.showPDF` | yes | yes | pdf presenter |
+| setting | `setting.set` | yes | no | set application configuration |
+| setting | `setting.get` | yes | no | get application configuration |
+| setting | `setting.remove` | yes | no | remove application configuration |
+| native | `native.run` | yes | yes | run native binaries |
+| native | `native.stop` | yes | no | stop running native binaries |
+| native | `native.setCallback` | Yes | No | Set various message callbacks for native binary programs |
+| native | `native.getProcessInfo` | yes | no | get process info |
+| native | `native.sendProcessMessage` | yes | no | send native `message` message to process |
+| native | `native.getNativeInfo` | Yes | No | Get native related information |
+| file | `file.exist` | yes | no | determine whether the file exists |
+| file | `file.getFileHash` | yes | no | get file hash value |
+| file | `file.getInfo` | yes | no | get file/folder info |
+| file | `file.read` | yes | yes | read file |
+| file | `file.write` | yes | yes | write file |
+| file | `file.mkdir` | yes | yes | create directory |
+| file | `file.remove` | yes | yes | remove file/folder |
+| file | `file.getAppHome` | yes | no | get app data directory |
+| file | `file.showItemInFolder` | yes | no | show file/folder in file manager/Finder/other file manager |
+| file | `file.openPath` | yes | yes | open a folder or file |
+| config | `config.get` | Yes | No | Get online configuration, added in container version `1.3.0`, add configuration on open platform |

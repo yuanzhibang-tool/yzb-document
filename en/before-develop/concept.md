@@ -1,17 +1,17 @@
-!> 本章节说明了一些猿之棒开发中使用到的概念,例如二进制,拓展等.
+!> This chapter explains some concepts used in the development of Ape's Stick, such as binary, extension, etc.
 
-### 开放平台应用
+### Open Platform Application
 
-> 是指在猿之棒开放平台提交的应用,包含`1.引用第三方开发的网页应用`,`2.开发者自己开发的开放平台应用`
+> Refers to the applications submitted on the Apezhibang open platform, including `1. Referencing web applications developed by third parties`, `2. Open platform applications developed by developers themselves`
 
-### 二进制
+### binary
 
-> 猿之棒`js bridge`接口 `native`下的接口支持管理运行二进制打包的应用,如`windows`上的命令行`exe`,`macOS` 或者 `linux`上的命令行应用,为了用户使用安全,这些二进制需要在开放平台提交,审核通过后可以使用,请务必保证二进制安全,不要未经用户同意获取用户隐私,安全性相关的内容,擅自传播病毒,木马,非法二进制内容.拓展上传通过审核后,将在用户调用后自动分发.
+> Ape's stick `js bridge` interface The interface under `native` supports the management of running binary packaged applications, such as the command line `exe` on `windows`, `macOS` or `linux` command line applications, for the user Safe to use, these binaries need to be submitted on the open platform and can be used after approval. Please ensure the security of the binaries. Do not obtain user privacy and security-related content without the consent of the user, and spread viruses, Trojan horses, and illegal binary content without authorization. Expand upload After passing the review, it will be automatically distributed after user invocation.
 
-### 拓展
+### Extension
 
-> 通过使用`node.js`开发拥有丰富原生能力的应用,为开放平台应用提供更加丰富的能力,拓展开发具有自己的规范,具体请参见[拓展开发](/#/extension-develop/default ':ignore')章节
+> By using `node.js` to develop applications with rich native capabilities, it provides more abundant capabilities for open platform applications, and extension development has its own specifications. For details, please refer to [Extension Development](/#/extension-develop/default ' :ignore') chapter
 
-### 公共拓展
+### public extension
 
-> 指的只,为了方便开发者开发,猿之棒开放平台提供的已经开发好的拓展,支持开发者 `js bridge`调用
+> Refers to, in order to facilitate the development of developers, the developed extensions provided by the Apezhibang open platform support developers' `js bridge` calls

@@ -1,23 +1,23 @@
-### JS 库说明
+### JS library description
 
 ---
 
-#### JS 库最新版本,支持 cdn 加速
+#### The latest version of the JS library, supports cdn acceleration
 
 `https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js`
 
-_重要说明_
+_important_
 
-!>该 JS 库需要在 header 中引入,可根据版本进行选择
-!>该库使用 major.minor.patch 版本格式发布
+!> The JS library needs to be introduced in the header, which can be selected according to the version
+!>The library is released using the major.minor.patch version format
 
-#### 发布规则
+#### Publishing Rules
 
-| 版本类型 | 说明                                                                    |
-| -------- | ----------------------------------------------------------------------- |
-| `major`  | 主版本更新,包含部分接口调用破坏性更改,需要注意更新说明,以及版本升级指引 |
-| `minor`  | 子版本更新,会包含部门接口的添加,不会影响现有接口的调用                  |
-| `patch`  | 开发者无需关注,仅会涉及到普通问题修复和热更新,不会影响接口调用          |
+| Version Type | Description                                                                                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `major`      | Major version update, including some destructive changes to interface calls, you need to pay attention to the update instructions and version upgrade guidelines |
+| `minor`      | The subversion update will include the addition of department interfaces, and will not affect the invocation of existing interfaces                              |
+| `patch`      | Developers do not need to pay attention, it will only involve common problem fixes and hot updates, and will not affect interface calls                          |
 
 > 0.0.25
-> 发布初始化版本
+> Release the initial version

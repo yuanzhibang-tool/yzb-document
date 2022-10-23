@@ -1,1 +1,1 @@
-本章节用以介绍`js bridge`相关接口方法
+This chapter is used to introduce `js bridge` related interface methods

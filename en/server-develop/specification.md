@@ -1,18 +1,18 @@
-### 网络接口调用统一使用`https`协议
+### Network interface calls uniformly use the `https` protocol
 
 ---
 
-### 网络接口调用统一使用`POST`方法
+### Network interface calls uniformly use the `POST` method
 
 ---
 
-### 网络接口返回的格式统一为`json`格式
+### The format returned by the network interface is unified as `json` format
 
-!>接口返回的`json`格式的`leaf`节点(最后一级节点),全部为`string`类型,用户可以根据具体的需要强行转换具体的类型
+!> The `leaf` nodes (the last level node) in `json` format returned by the interface are all of `string` type, and users can forcibly convert specific types according to specific needs
 
 ---
 
-**参考:**
+**refer to:**
 
 ```json
 {
@@ -22,14 +22,14 @@
 }
 ```
 
-_返回值说明_
+_Return value description_
 
-| 主键      | 类型           | 说明                                                                                   |
-| --------- | -------------- | -------------------------------------------------------------------------------------- |
-| `status`  | `四位正整数`   | 当前操作状态码,用来标记成功或者错误类型,2xxx 的为成功,4xxx 的为失败,具体参考状态码描述 |
-| `message` | `字符串`       | 用户可读当前操作结果描述                                                               |
-| `data`    | `数组或者字典` | 当前操作返回的要获取的内容,没有需要的参数默认返回空数组                                |
+| primary key | type                          | description                                                                                                                                                  |
+| ----------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `status`    | `Four-digit positive integer` | Current operation status code, used to mark success or error type, 2xxx is success, 4xxx is failure, please refer to the status code description for details |
+| `message`   | `String`                      | User-readable description of the current operation result                                                                                                    |
+| `data`      | `array or dictionary`         | The content returned by the current operation to be obtained, if there is no required parameter, an empty array is returned by default                       |
 
 ---
 
-> 状态码请参照 [返回状态码说明](/#/server-develop/status-code ':ignore')
+> For the status code, please refer to [Return Status Code Description](/#/server-develop/status-code ':ignore')

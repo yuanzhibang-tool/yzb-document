@@ -1,5 +1,5 @@
 ## 2022/7/01
 
-### 更新内容
+### Update Content
 
-- 1.添加第一版文档内容
+- 1. Add the content of the first version of the document

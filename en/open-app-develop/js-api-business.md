@@ -1,33 +1,33 @@
-> 业务相关接口
+> Business related interfaces
 
 ---
 
 ### `business.isChinaIp`
 
-!>本接口自容器`1.3.2`版本之后提供
+!> This interface has been provided since the container `1.3.2` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                       |
-| ------------- | ------------------------ |
-| **接口描述:** | 判断是否是国内`ip`的接口 |
-| **备注**      | 无                       |
+| primary key                | value                                             |
+| -------------------------- | ------------------------------------------------- |
+| **Interface description:** | Determine whether it is a domestic `ip` interface |
+| **Remarks**                | None                                              |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| `无` | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| `none`     | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {}
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {
@@ -39,30 +39,30 @@
 
 ### `business.isMobileBound`
 
-!>本接口自容器`1.3.2`版本之后提供
+!> This interface has been provided since the container `1.3.2` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                           |
-| ------------- | ---------------------------- |
-| **接口描述:** | 判断用户是否绑定手机号的接口 |
-| **备注**      | 用以进行中国境内实名验证     |
+| primary key                | value                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------- |
+| **Interface description:** | The interface to determine whether the user is bound to a mobile phone number |
+| **Remarks**                | For real-name verification in China                                           |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| `无` | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| `none`     | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {}
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {
@@ -74,22 +74,22 @@
 
 ### `business.showAccountSetting`
 
-!>本接口自容器`1.3.2`版本之后提供
+!> This interface has been provided since the container `1.3.2` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                          |
-| ------------- | ------------------------------------------- |
-| **接口描述:** | 判断用户未绑定手机号,进入绑定手机号设置页面 |
-| **备注**      | 用以进行中国境内实名验证                    |
+| primary key                | value                                                                                                             |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Interface description:** | Judging that the user is not bound with a mobile phone number, enter the binding mobile phone number setting page |
+| **Remarks**                | For real-name verification in China                                                                               |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数         | 说明                                  | 默认值 | 验证规则 |
-| ------------ | ------------------------------------- | ------ | -------- |
-| `app_action` | 无,打开手机绑定时为`show_mobile_bind` | 无     | 无       |
+| Parameters   | Description                                             | Default | Validation Rules |
+| ------------ | ------------------------------------------------------- | ------- | ---------------- |
+| `app_action` | None, `show_mobile_bind` when mobile binding is enabled | None    | None             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -97,9 +97,9 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {}
@@ -109,30 +109,30 @@
 
 ### `business.showAppUpdator`
 
-!>本接口自容器`1.3.2`版本之后提供
+!> This interface has been provided since the container `1.3.2` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                                     |
-| ------------- | ------------------------------------------------------ |
-| **接口描述:** | 如果`js`该版本接口不支持,提示用户升级,弹出应用升级页面 |
-| **备注**      | 用以进行应用升级                                       |
+| primary key                | value                                                                                                                                     |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interface description:** | If the version of `js` does not support the interface, the user will be prompted to upgrade, and the application upgrade page will pop up |
+| **Remarks**                | For application upgrade                                                                                                                   |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| `无` | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| `none`     | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {}
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {

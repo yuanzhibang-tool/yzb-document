@@ -1,21 +1,21 @@
-## 相关通用回调的方法
+## Related general callback methods
 
-> 相关通用回调的方法
+> Methods of related generic callbacks
 
-### bridge 准备好的回调
+### bridge ready callback
 
-> bridge 准备好的回调
+> bridge ready callback
 
 `yzb.ready`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                   |
-| ------------- | -------------------- |
-| **接口描述:** | `bridge`准备好的回调 |
-| **备注**      | 代理方法,不能调用    |
+| primary key                | value                          |
+| -------------------------- | ------------------------------ |
+| **Interface description:** | `bridge` ready callback        |
+| **Remarks**                | Proxy method, cannot be called |
 
-**原生调用 js 方法示例**
+**Example of calling js method natively**
 
 ```javascript
 yzb.ready(() => {
@@ -25,20 +25,20 @@ yzb.ready(() => {
 
 ---
 
-### bridge 准备出现错误的回调
+### bridge prepare callback for error
 
-> bridge 准备出现错误的回调
+> bridge prepares a callback for an error
 
 `yzb.error`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                      |
-| ------------- | --------------------------------------- |
-| **接口描述:** | `bridge`准备出错的回调                  |
-| **备注**      | 收到该错误建议重新刷新页面,一般很少发生 |
+| primary key                | value                                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------------- |
+| **Interface description:** | `bridge` prepares an error callback                                                    |
+| **Remarks**                | It is recommended to refresh the page after receiving this error, which rarely happens |
 
-**原生调用 js 方法示例**
+**Example of calling js method natively**
 
 ```javascript
 yzb.error(() => {

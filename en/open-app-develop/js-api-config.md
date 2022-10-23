@@ -1,25 +1,25 @@
-> 用来快速实现应用在线配置的接口
+> Interface for fast online configuration of applications
 
 ---
 
 ### `config.get`
 
-!>本接口自容器`1.3.0`版本之后提供
+!> This interface has been provided since the container `1.3.0` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                 |
-| ------------- | ------------------ |
-| **接口描述:** | 获取配置的`js`方法 |
-| **备注**      | 无                 |
+| primary key                | value                                |
+| -------------------------- | ------------------------------------ |
+| **Interface description:** | Get the `js` method of configuration |
+| **Remarks**                | None                                 |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数  | 说明                                                  | 默认值 | 验证规则 |
-| ----- | ----------------------------------------------------- | ------ | -------- |
-| `key` | 如果不传则获取该用户下所有的配置,支持多个使用逗号分隔 | 无     | 无       |
+| Parameters | Description                                                                                           | Default | Validation Rules |
+| ---------- | ----------------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| `key`      | If you don't pass it, get all the configurations under the user, support multiple separated by commas | None    | None             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -27,9 +27,9 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {

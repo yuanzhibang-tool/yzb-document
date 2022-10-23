@@ -1,21 +1,21 @@
-> 通知相关命名空间方法调用相关文档
+> Notify related namespace method invocation related documentation
 
 ### `notification.vibrate`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                        |
-| ------------- | ------------------------- |
-| **接口描述:** | 调用震动的方法            |
-| **备注**      | 调用该接口,整个窗口会抖动 |
+| primary key                | value                                            |
+| -------------------------- | ------------------------------------------------ |
+| **Interface description:** | Call the vibration method                        |
+| **Remarks**                | Call this interface, the whole window will shake |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| 无   | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| none       | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```
 {
@@ -25,7 +25,7 @@
 
 ```
 
-**方法回调`next`参数示例(只有`next`回调,没错误回调)**
+**Method callback `next` parameter example (only `next` callback, no error callback)**
 
 ```
 {
@@ -34,37 +34,37 @@
 }
 ```
 
-!>**注意:**
+!>**Note:**
 
-> 无错误回调
+> no error callback
 
 ---
 
 ### `notification.showToast`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                      |
-| ------------- | ----------------------- |
-| **接口描述:** | 显示 toast 轻提示的方法 |
-| **备注**      | 会在应用端上部提示信息  |
+| primary key                | value                                                             |
+| -------------------------- | ----------------------------------------------------------------- |
+| **Interface description:** | How to display toast light tips                                   |
+| **Remarks**                | Information will be prompted on the upper part of the application |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| 无   | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| none       | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```
 {
-    type: "info", //消息类型,info|warning|success|error
-    content: "这个是提示内容!"
+    type: "info", //Message type, info|warning|success|error
+    content: "This is the prompt content!"
 }
 
 ```
 
-**方法回调`next`参数示例(只有`next`回调,没错误回调)**
+**Method callback `next` parameter example (only `next` callback, no error callback)**
 
-!>注意:无错误回调
+!> Note: no error callback

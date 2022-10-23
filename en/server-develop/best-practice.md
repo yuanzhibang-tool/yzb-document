@@ -1,21 +1,21 @@
-> 提供最佳实践的方案供开发者参考
+> Provide best practice solutions for developers to refer to
 
-**1.将接口开发分为两个部分**
-
----
-
-### 第一部分:获取各种授权`code`等操作
-
-> 由于各种授权`code`会定时进行更新与获取，所以将此部分工作作为单独的部分进行开发，将各种授权的`code`存放在`redis` `mysql`等进行单独存储。以便于其他使用进行存取。
-
-!> 请在开发加速中获取一键部署代码,支持`阿里云函数计算(FC)`以及 docker 方式快速一键部署.
+**1. Divide the interface development into two parts**
 
 ---
 
-### 第二部分:操作用户资源以及其他资源相关业务接口
+### Part 1: Obtaining various authorization `code` operations
 
-> 将此部分代码开发放置于业务代码，在需要使用各种授权`code`时候,从`redis` `mysql`等位置获取,这样可以保持授权 `code` 为最新状态.
+> Since various authorized `code` will be updated and obtained regularly, this part of the work is developed as a separate part, and the various authorized `code` is stored in `redis` `mysql`, etc. for separate storage. for easy access to other uses.
+
+!> Please get the one-click deployment code in the development acceleration, which supports `Alibaba Cloud Function Computing (FC)` and docker method for fast one-click deployment.
+
+---
+
+### Part II: Operating user resources and other resource-related business interfaces
+
+> Place this part of the code development in the business code. When you need to use various authorization `code`, obtain it from `redis` `mysql` and other locations, so that the authorization `code` can be kept up to date.
 
 ![](../images/20220716042036.jpg ':size=500')
 
-!>我们在[开发加速](/#/server-develop/develop-speed-up ':ignore')提供了 `docker` 一键部署,以及<a href="https://fcnext.console.aliyun.com/overview" target="_blank">阿里云函数计算(FC)</a>部署方式以及开源代码.
+!>We provide `docker` one-click deployment in [Development Acceleration](/#/server-develop/develop-speed-up ':ignore'), and <a href="https://fcnext.console.aliyun .com/overview" target="_blank">Alibaba Cloud Function Computing (FC)</a> deployment method and open source code.

@@ -1,4 +1,4 @@
-## 最新的 bridge 版本 `v0.0.35`
+## The latest bridge version `v0.0.35`
 
 !> fsdf
 
@@ -6,10 +6,10 @@
 
 `https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js`
 
-更新日志:
+Changelog:
 
 #### 2022/06/27
 
 ```
-1.初始化第一个线上版本
+1. Initialize the first online version
 ```

@@ -1,20 +1,20 @@
-### 获取用户总数的接口
+### Interface to get the total number of users
 
-> 获取使用的用户总数的接口
+> Interface to get the total number of users used
 
-**接口地址**
+**interface address**
 
 `POST /CommonResource/getUserCount`
 
-**参数说明**
+**Parameter Description**
 
-| 参数     | 是否必须 | 说明               |
-| -------- | -------- | ------------------ |
-| `app_id` | 是       | 开放平台应用的`id` |
+| Parameter | Required | Description                           |
+| --------- | -------- | ------------------------------------- |
+| `app_id`  | yes      | `id` of the open platform application |
 
-**返回值**
+**return value**
 
-成功的返回值
+successful return value
 
 ```json
 {

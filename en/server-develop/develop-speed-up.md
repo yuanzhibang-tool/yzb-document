@@ -1,61 +1,61 @@
-> 快速实现对应业务
+> Quickly realize corresponding business
 
-### 实现授权`code`的获取和自动更新
+### Realize the acquisition and automatic update of authorization `code`
 
-1.使用`docker-compose`部署,该方式可以自动实现数据缓存到 redis,自动启动代理服务器等功能.
-**具体`compose`方式部署,请参照:**
-https://github.com/yuanzhibang-tool/docker/tree/main/oapp-code-docker-compose
+1. Use `docker-compose` to deploy, this method can automatically cache data to redis, automatically start proxy server and other functions.
+   **For specific `compose` deployment, please refer to:**
+   https://github.com/yuanzhibang-tool/docker/tree/main/oapp-code-docker-compose
 
-> 该`compose`实现了代理,redis 存储以及定时更新`access_token`和`ticket`的工作,并会定时清理日志,保持日志不会占用过多空间
+> The `compose` implements the work of proxy, redis storage and regular update of `access_token` and `ticket`, and will regularly clean up the log to keep the log from taking up too much space
 
-_注意:请配置好您这边需要的开放平台应用信息以及在开放平台该应用下添加 ip 白名单,否则会返回错误,已挂载日志到`logs`目录下,如有问题请查看目录,开发者如果需要自己组合业务请参考该`compose`文件自己调整._
+_Note: Please configure the open platform application information you need and add the IP whitelist under the open platform application, otherwise an error will be returned. The logs have been mounted to the `logs` directory. If you have any questions, please check the directory. If developers need to compose their own business, please refer to the `compose` file to adjust._
 
 ---
 
-### 支持的 docker 镜像,请参照
+### Supported docker images, please refer to
 
 https://hub.docker.com/u/yuanzhibang
 
 ---
 
-Docker 镜像构建以及 `code` 更新任务为开源项目,请参照:
+Docker image building and `code` update tasks are open source projects, please refer to:
 
 https://github.com/yuanzhibang-tool/docker.git
 
 https://github.com/yuanzhibang-tool/oapp-token-cron-task.git
 
-!>请注意阅读项目以及目录下的 README.md 以更快实现功能开发
+!>Please pay attention to read the project and the README.md in the directory for faster functional development
 
 ---
 
-### 业务接口的快速开发
+### Rapid development of business interfaces
 
-**node 接口开发**
-我们对接口的调用进行了封装,`node`开发我们封装了`node`的`npm`库
+**node interface development**
+We encapsulate the call to the interface, and `node` develops the `npm` library that encapsulates `node`
 
 https://www.npmjs.com/package/@yuanzhibang/oauth-server
 
-具体使用说明,请参照开源项目,和代码备注.
+For specific usage instructions, please refer to the open source project and code remarks.
 
 https://github.com/yuanzhibang-tool/oauth-server.git
 
 ---
 
-**java,php,python 接口开发**
-我们提供了 demo,对接口进行了一定的封装,请参考使用.
+**java,php,python interface development**
+We provide a demo, which encapsulates the interface to a certain extent, please refer to use.
 
 https://github.com/yuanzhibang-tool/demo
 
 ---
 
-**_demo 或者 npm 包已完成的工作:_**
+**_demo or the work done by the npm package:_**
 
-1.`js` 签名生成
+1. `js` signature generation
 
-2.所有接口的封装调用
+2. Encapsulation calls of all interfaces
 
-3.接口调用支持设置代理,具体使用请参照 单元测试代码
+3. Interface call supports setting proxy, please refer to unit test code for specific usage
 
-4.支持从 redis 获取`server_access_token`或者`js_ticket`
+4. Support getting `server_access_token` or `js_ticket` from redis
 
-!>欢迎猿猿们提供其他语言的 demo 代码,请按照其他语言的封装进行封装,并提供单元测试.提供的代码将遵循 MIT 协议.
+!>Apes are welcome to provide demo code in other languages, please encapsulate it according to the package of other languages, and provide unit tests. The provided code will follow the MIT protocol.

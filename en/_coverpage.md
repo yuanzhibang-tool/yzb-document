@@ -2,13 +2,13 @@
 
 ![logo](_media/icon.svg)
 
-# 猿之棒文档
+# Ape's Stick Documentation
 
-> 开发者工具平台!
+> Developer Tools Platform!
 
-- 开放平台应用开发
-- 拓展开发
-- 工具商店
+- Open platform application development
+- Expansion development
+- Tool shop
 
 <a href="https://github.com/yuanzhibang-tool/yzb-document/" target="_blank">GitHub</a>
-[开始吧!](get_started)
+[Get started!](get_started)

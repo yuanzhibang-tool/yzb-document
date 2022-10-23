@@ -1,29 +1,29 @@
-> 通过使用`js bridge`,服务器提供的接口,拓展,可以是实现不同的应用能力
+> By using `js bridge`, the interface provided by the server can be extended to achieve different application capabilities
 
-### `js bridge`部分
+### `js bridge` section
 
-| 序号 | 能力                                                                       |
-| ---- | -------------------------------------------------------------------------- |
-| 1    | 用户识别(需要配合服务器接口)                                               |
-| 2    | 用户资源权限申请                                                           |
-| 3    | 文件操作                                                                   |
-| 4    | 开放平台应用关闭应用自己                                                   |
-| 5    | 显示模态框展示 `url` 内容                                                  |
-| 6    | 接收通过外部(如浏览器,第三方应用)通过`url`打开开放平台应用的回调           |
-| 7    | 通过窗口展示图片和 pdf 文件                                                |
-| 8    | 震动窗口以提示用户                                                         |
-| 9    | 运行`二进制`或者 [拓展](/#/extension-develop/default ':ignore') 或者`脚本` |
-| 10   | 保存,获取,删除开放平台应用的设置                                           |
+| Serial number | Capability                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1             | User identification (requires server interface)                                                                                      |
+| 2             | User resource permission application                                                                                                 |
+| 3             | File Operations                                                                                                                      |
+| 4             | Open platform application closes the application itself                                                                              |
+| 5             | Show modal box showing `url` content                                                                                                 |
+| 6             | Receive callbacks for opening open platform applications through `url` through external (such as browsers, third-party applications) |
+| 7             | Display images and pdf files through windows                                                                                         |
+| 8             | Vibrate window to alert user                                                                                                         |
+| 9             | Run `binary` or [extension](/#/extension-develop/default ':ignore') or `script`                                                      |
+| 10            | Save, get, delete the settings of open platform applications                                                                         |
 
-### `服务器接口`部分
+### `Server Interface` section
 
-| 序号 | 能力                                   |
-| ---- | -------------------------------------- |
-| 1    | 用户识别(需要配合`js bridge`)          |
-| 2    | 获取用户头像昵称等信息(需用户开放权限) |
-| 3    | 获取添加应用的用户总数量               |
-| 3    | `OAuth2.0` 相关 `code` 获取            |
+| Serial number | Capability                                                                              |
+| ------------- | --------------------------------------------------------------------------------------- |
+| 1             | User identification (need to cooperate with `js bridge`)                                |
+| 2             | Get information such as the user's avatar, nickname, etc. (user permission is required) |
+| 3             | Get the total number of users who have added apps                                       |
+| 3             | `OAuth2.0` related `code` acquisition                                                   |
 
-### `拓展`部分
+### `Extension` section
 
-> 使用`node.js`赋予的能力,能实现绝大部分的`node`的原生能力,具体开发请参照 [拓展开发](/#/extension-develop/default ':ignore')章节
+> Using the capabilities given by `node.js`, most of the native capabilities of `node` can be realized. For specific development, please refer to the [Extension Development](/#/extension-develop/default ':ignore') chapter

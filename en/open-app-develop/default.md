@@ -1,1 +1,1 @@
-## 本目录用来说明开放平台应用开发文档,主要是和js交互部分的内容
+## This directory is used to describe the open platform application development documents, mainly the content of the interactive part with js

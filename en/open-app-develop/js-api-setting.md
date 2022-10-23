@@ -1,26 +1,26 @@
-> 用来快速实现用户设置信息同步的接口,帮助开放平台应用同步设置
+> An interface for quickly synchronizing user settings information to help open platform applications synchronize settings
 
 ---
 
 ### `setting.set`
 
-!>本接口自容器`1.3.0`版本之后提供
+!> This interface has been provided since the container `1.3.0` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                 |
-| ------------- | ------------------ |
-| **接口描述:** | 设置配置的`js`方法 |
-| **备注**      | 无                 |
+| primary key                | value                                 |
+| -------------------------- | ------------------------------------- |
+| **Interface description:** | `js` method for setting configuration |
+| **Remarks**                | None                                  |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数    | 说明                                             | 默认值 | 验证规则 |
-| ------- | ------------------------------------------------ | ------ | -------- |
-| `key`   | 设置对应的键                                     | 无     | 无       |
-| `value` | 设置对应的值,支持对象,get 获取时候也会转换为对象 | 无     | 无       |
+| Parameters | Description                                                                                  | Default | Validation Rules |
+| ---------- | -------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| `key`      | set the corresponding key                                                                    | none    | none             |
+| `value`    | Set the corresponding value, support objects, and will also be converted to objects when get | None    | None             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -29,7 +29,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -39,22 +39,22 @@
 
 ### `setting.get`
 
-!>本接口自容器`1.3.0`版本之后提供
+!> This interface has been provided since the container `1.3.0` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                 |
-| ------------- | ------------------ |
-| **接口描述:** | 获取配置的`js`方法 |
-| **备注**      | 无                 |
+| primary key                | value                                |
+| -------------------------- | ------------------------------------ |
+| **Interface description:** | Get the `js` method of configuration |
+| **Remarks**                | None                                 |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数  | 说明                                                  | 默认值 | 验证规则 |
-| ----- | ----------------------------------------------------- | ------ | -------- |
-| `key` | 如果不传则获取该用户下所有的配置,支持多个使用逗号分隔 | 无     | 无       |
+| Parameters | Description                                                                                           | Default | Validation Rules |
+| ---------- | ----------------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| `key`      | If you don't pass it, get all the configurations under the user, support multiple separated by commas | None    | None             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -62,9 +62,9 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {
@@ -81,22 +81,22 @@
 
 ### `setting.remove`
 
-!>本接口自容器`1.3.0`版本之后提供
+!> This interface has been provided since the container `1.3.0` version
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                 |
-| ------------- | ------------------ |
-| **接口描述:** | 删除配置的`js`方法 |
-| **备注**      | 无                 |
+| primary key                | value                                       |
+| -------------------------- | ------------------------------------------- |
+| **Interface description:** | Delete the `js` method of the configuration |
+| **Remarks**                | None                                        |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数  | 说明                                                    | 默认值 | 验证规则 |
-| ----- | ------------------------------------------------------- | ------ | -------- |
-| `key` | 如果不传则清空该用户下所有的配置,支持传递多个用逗号分开 | 无     | 无       |
+| Parameters | Description                                                                                                      | Default | Validation Rules |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| `key`      | If not passed, all the configuration under the user will be cleared. Support multiple passes separated by commas | None    | None             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -104,9 +104,9 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-!>无论返回多个还是一个,都会按照该格式返回,没有则没有该值
+!> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
 
 ```json
 {}

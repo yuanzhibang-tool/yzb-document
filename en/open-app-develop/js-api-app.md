@@ -2,67 +2,67 @@
 
 ### `app.close`
 
-**主要描述**
+**Main Description**
 
-| 主键 | 值 |
+| primary key | value |
 | ------------- | ------------------- |
-| **接口描述:** | 关闭当前应用的`js`方法 |  
-| **备注** | 无 |
+| **Interface description:** | Close the `js` method of the current application |
+| **Remarks** | None |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明| 默认值 | 验证规则 |
+| Parameters | Description | Default | Validation Rules |
 | --- | --- | --- | --- |
-| `无` | 无 | 无 |无 |
+| `none` | none | none |none |
 
-**方法参数示例**
+**Method parameter example**
 
-```json
+````json
 {}
-```
+````
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-```json
+````json
 {}
-```
+````
 
 ---
 
 ### `app.showModal`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                   |
-| ------------- | ------------------------------------ |
-| **接口描述:** | 使用 modal 显示新 url 内容的`js`方法 |
-| **备注**      | 无                                   |
+| primary key                | value                                              |
+| -------------------------- | -------------------------------------------------- |
+| **Interface description:** | `js` method to display new url content using modal |
+| **Remarks**                | None                                               |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数        | 说明                                     | 默认值 | 验证规则             |
-| ----------- | ---------------------------------------- | ------ | -------------------- |
-| `url`       | modal 视图要打开的 url                   | 无     | 无                   |
-| `width`     | 打开窗口的宽,过小过大均会被自动调整      | 无     | 无                   |
-| `height`    | 打开窗口的高,过小过大均会被自动调整      | 无     | 无                   |
-| `init_data` | 给 modal 窗口传入的内容,具体如何使用参考 | 空     | 请使用对象来传递内容 |
+| Parameters  | Description                                                                                      | Default | Validation Rules                          |
+| ----------- | ------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------- |
+| `url`       | The url to open the modal view                                                                   | none    | none                                      |
+| `width`     | The width of the open window, if it is too small or too large, it will be automatically adjusted | None    | None                                      |
+| `height`    | The height of the open window, it will be automatically adjusted if it is too small or too large | None    | None                                      |
+| `init_data` | The content passed to the modal window, how to use the reference                                 | Empty   | Please use the object to pass the content |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
-  "url": "https://www.baidu.com/", //modal视图要打开的url
-  "width": 500, //打开窗口的宽
-  "height": 400, //打开窗口的高
+  "url": "https://www.baidu.com/", //url to open the modal view
+  "width": 500, //The width of the open window
+  "height": 400, //height of the open window
   "init_data": {
-    //给modal窗口传入的内容,具体如何使用参考
+    //The content passed to the modal window, how to use the reference
     "k1": "v1",
     "k2": "v2"
   }
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -72,19 +72,19 @@
 
 ### `app.setUrlOpenAction`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                                                     |
-| ------------- | ---------------------------------------------------------------------- |
-| **接口描述:** | 设置通过 url 打开应用的回调接口，该接口将完整的 url 回调给设置的该函数 |
-| **备注**      | 无                                                                     |
+| primary key                | value                                                                                                                                 |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interface description:** | Set the callback interface for opening the application through url, the interface will call back the complete url to the set function |
+| **Remarks**                | None                                                                                                                                  |
 
-**参数说明**
+**Parameter Description**
 
-传入一个参数为 url 的函数
+Pass in a function whose parameter is url
 
 ```javascript
-// url 示例: yzb://yuanzhibang.com?action=open_app&app_action=app_detail&app_id=101170
+// url example: yzb://yuanzhibang.com?action=open_app&app_action=app_detail&app_id=101170
 yzb.app.setUrlOpenAction((url) => {
   console.log(`open app by url: ${url}`);
 });
@@ -94,16 +94,16 @@ yzb.app.setUrlOpenAction((url) => {
 
 ### `app.setVersion`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                          |
-| ------------- | ------------------------------------------- |
-| **接口描述:** | 设置当前的应用版本号,在应用反馈会带上该信息 |
-| **备注**      | 无                                          |
+| primary key                | value                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Interface description:** | Set the current application version number, which will be included in the application feedback |
+| **Remarks**                | None                                                                                           |
 
-**参数说明**
+**Parameter Description**
 
-传入一个版本号参数,建议为`1.0.1`格式的
+Pass in a version number parameter, it is recommended to be in `1.0.1` format
 
 ```javascript
 yzb.app.setVersion('1.0.1');

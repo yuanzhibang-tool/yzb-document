@@ -1,11 +1,11 @@
-### 所有通过`js`的参数均需要进行验证,以免传入非法的参数问题造成异常错误
+### All parameters that pass `js` need to be verified to avoid abnormal errors caused by passing in illegal parameters.
 
-!>分为两类参数,一类是通用的参数验证,另外一类是针对每个方法的参数验证,例如,`tid`为通用验证参数
+!> Divided into two types of parameters, one is general parameter verification, the other is parameter verification for each method, for example, `tid` is a general verification parameter
 
-### 通用规则写于此,其他的则写在对应的`json`传参示例中参数中.
+### The general rules are written here, and the others are written in the parameters of the corresponding `json` parameter transfer example.
 
-| 通用参数值 | 规则                                | 说明 |
-| ---------- | ----------------------------------- | ---- |
-| `tid`      | `require,int,max_length:11,require` |      |
-| `app_id`   | `require,int,max_length:11`         |      |
-| `name`     | `min:1,max:64`                      |      |
+| Common parameter values | Rules                               | Description |
+| ----------------------- | ----------------------------------- | ----------- |
+| `tid`                   | `require,int,max_length:11,require` |             |
+| `app_id`                | `require,int,max_length:11`         |             |
+| `name`                  | `min:1,max:64`                      |             |

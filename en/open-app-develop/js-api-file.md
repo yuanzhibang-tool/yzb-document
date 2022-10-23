@@ -2,55 +2,55 @@
 
 ### `file.exist`
 
-**主要描述**
+**Main Description**
 
-| 主键 | 值 |
+| primary key | value |
 | ------------- | ------------------- |
-| **接口描述:** | 获取文件是否存在的方法 |  
-| **备注** | 无 |
+| **Interface description:** | How to get whether the file exists |
+| **Remarks** | None |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明| 默认值 | 验证规则 |
+| Parameters | Description | Default | Validation Rules |
 | --- | --- | --- | --- |
-| `path` | 文件绝对路径 | 无 |参考参数验证说明`require` |
+| `path` | file absolute path | none | refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
-```json
+````json
 {
   "path": "C:\\Users\\Admin\\Downloads\\c.png"
 }
-```
+````
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-```json
+````json
 {
         "exist":true|false
 }
 
-```
+````
 
 ---
 
 ### `file.getFileHash`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                           |
-| ------------- | -------------------------------------------- |
-| **接口描述:** | 获取文件`hash`的`js`方法                     |
-| **备注**      | 可以返回文件的`md5`,`sha1`,`sha256`,`sha512` |
+| primary key                | value                                                    |
+| -------------------------- | -------------------------------------------------------- |
+| **Interface description:** | Get the `js` method of the file `hash`                   |
+| **Remarks**                | Can return `md5`, `sha1`, `sha256`, `sha512` of the file |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数        | 说明         | 默认值 | 验证规则                       |
-| ----------- | ------------ | ------ | ------------------------------ |
-| `hash_name` | hash 类型    | 无     | `md5`,`sha1`,`sha256`,`sha512` |
-| `path`      | 文件绝对路径 | 无     | 参考参数验证说明`require`      |
+| Parameters  | Description        | Default | Validation Rules                                       |
+| ----------- | ------------------ | ------- | ------------------------------------------------------ |
+| `hash_name` | hash type          | none    | `md5`,`sha1`,`sha256`,`sha512`                         |
+| `path`      | file absolute path | none    | refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -59,7 +59,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {
@@ -71,20 +71,20 @@
 
 ### `file.getInfo`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                             |
-| ------------- | ------------------------------ |
-| **接口描述:** | 获取文件或者文件信息的`js`方法 |
-| **备注**      | 可以返回文件的相关信息         |
+| primary key                | value                                           |
+| -------------------------- | ----------------------------------------------- |
+| **Interface description:** | `js` method to get file or file information     |
+| **Remarks**                | Can return the relevant information of the file |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明         | 默认值 | 验证规则                  |
-| ------ | ------------ | ------ | ------------------------- |
-| `path` | 文件绝对路径 | 无     | 参考参数验证说明`require` |
+| Parameters | Description        | Default | Validation Rules                                       |
+| ---------- | ------------------ | ------- | ------------------------------------------------------ |
+| `path`     | file absolute path | none    | refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -92,16 +92,16 @@
 }
 ```
 
-**方法回调`next`结果示例**
+**Method callback `next` result example**
 
 ```json
 {
-  "executable": true, //是否可执行
-  "is_dir": false, //是否是文件夹
-  "readable": true, //是否可读
-  "size": 454, //文件大小,单位字节
-  "update_time": 1654441257838.4453, //更新时间
-  "writable": true //是否可写
+  "executable": true, //Whether executable
+  "is_dir": false, //Is it a folder
+  "readable": true, //whether readable
+  "size": 454, //file size, in bytes
+  "update_time": 1654441257838.4453, //Update time
+  "writable": true //Writable
 }
 ```
 
@@ -109,20 +109,20 @@
 
 ### `file.read`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                     |
-| ------------- | ---------------------- |
-| **接口描述:** | 获取文件内容的`js`方法 |
-| **备注**      | 可以返回文件的内容信息 |
+| primary key                | value                                              |
+| -------------------------- | -------------------------------------------------- |
+| **Interface description:** | Get the `js` method of file content                |
+| **Remarks**                | You can return the content information of the file |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明         | 默认值 | 验证规则                  |
-| ------ | ------------ | ------ | ------------------------- |
-| `path` | 文件绝对路径 | 无     | 参考参数验证说明`require` |
+| Parameters | Description        | Default | Validation Rules                                       |
+| ---------- | ------------------ | ------- | ------------------------------------------------------ |
+| `path`     | file absolute path | none    | refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -130,12 +130,12 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {
   "content": "dmVyc2lvbjogMC4wLjM5NgpmaWxlczoKICAtIHVybDogWXVhbn…8LQogIDEu5LyY5YyW5oCn6IO9CiAgMi7kv67lpI1idWdzCg=="
-  //文件内容`base64`后的内容,为二进制内容读取内容,请根据需要进行转换
+  //The content of the file content after `base64`, read the content for the binary content, please convert it as needed
 }
 ```
 
@@ -143,22 +143,22 @@
 
 ### `file.write`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                     |
-| ------------- | ---------------------- |
-| **接口描述:** | 写入文件内容的`js`方法 |
-| **备注**      | 无                     |
+| primary key                | value                                |
+| -------------------------- | ------------------------------------ |
+| **Interface description:** | `js` method for writing file content |
+| **Remarks**                | None                                 |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数      | 说明                                    | 默认值 | 验证规则                  |
-| --------- | --------------------------------------- | ------ | ------------------------- | ------ |
-| `path`    | 文件绝对路径                            | 无     | 参考参数验证说明`require` |
-| `content` | 文件写入的内容,为内容的`base64`后的内容 | 无     | 参考参数验证说明`require` |
-| `mode`    | 是往后附加,还是全新写入                 | 无     | `append                   | write` |
+| Parameters | Description                                                                         | Default | Validation Rules                                          |
+| ---------- | ----------------------------------------------------------------------------------- | ------- | --------------------------------------------------------- | ------ |
+| `path`     | file absolute path                                                                  | none    | refer to parameter verification instructions `require`    |
+| `content`  | The content written in the file, which is the content after `base64` of the content | None    | Refer to the parameter verification description `require` |
+| `mode`     | append or write new                                                                 | none    | `append                                                   | write` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -168,7 +168,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -178,20 +178,20 @@
 
 ### `file.mkdir`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                   |
-| ------------- | -------------------- |
-| **接口描述:** | 创建文件夹的`js`方法 |
-| **备注**      | 无                   |
+| primary key                | value                        |
+| -------------------------- | ---------------------------- |
+| **Interface description:** | `js` method to create folder |
+| **Remarks**                | None                         |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明           | 默认值 | 验证规则 |
-| ------ | -------------- | ------ | -------- |
-| `path` | 文件夹绝对路径 | 无     | 无       |
+| Parameters | Description          | Default | Validation Rules |
+| ---------- | -------------------- | ------- | ---------------- |
+| `path`     | Folder absolute path | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -199,7 +199,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -209,20 +209,20 @@
 
 ### `file.remove`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                 |
-| ------------- | ------------------ |
-| **接口描述:** | 删除文件的`js`方法 |
-| **备注**      | 无                 |
+| primary key                | value                          |
+| -------------------------- | ------------------------------ |
+| **Interface description:** | `js` method for deleting files |
+| **Remarks**                | None                           |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明         | 默认值 | 验证规则 |
-| ------ | ------------ | ------ | -------- |
-| `path` | 文件绝对路径 | 无     | 无       |
+| Parameters | Description        | Default | Validation Rules |
+| ---------- | ------------------ | ------- | ---------------- |
+| `path`     | absolute file path | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -230,7 +230,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -240,26 +240,26 @@
 
 ### `file.getAppHome`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                   |
-| ------------- | -------------------- |
-| **接口描述:** | 获取本应用的工作目录 |
-| **备注**      | 无                   |
+| primary key                | value                                         |
+| -------------------------- | --------------------------------------------- |
+| **Interface description:** | Get the working directory of this application |
+| **Remarks**                | None                                          |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数 | 说明 | 默认值 | 验证规则 |
-| ---- | ---- | ------ | -------- |
-| `无` | 无   | 无     | 无       |
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| `none`     | none        | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {}
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {
@@ -271,20 +271,20 @@
 
 ### `file.showItemInFolder`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                               |
-| ------------- | -------------------------------- |
-| **接口描述:** | 在文件浏览器中显示文件或者文件夹 |
-| **备注**      | 无                               |
+| primary key                | value                                          |
+| -------------------------- | ---------------------------------------------- |
+| **Interface description:** | Display the file or folder in the file browser |
+| **Remarks**                | None                                           |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明         | 默认值 | 验证规则 |
-| ------ | ------------ | ------ | -------- |
-| `path` | 文件绝对路径 | 无     | 无       |
+| Parameters | Description        | Default | Validation Rules |
+| ---------- | ------------------ | ------- | ---------------- |
+| `path`     | absolute file path | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -292,7 +292,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}
@@ -302,20 +302,20 @@
 
 ### `file.openPath`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                     |
-| ------------- | ---------------------- |
-| **接口描述:** | 打开特定文件或者文件夹 |
-| **备注**      | 无                     |
+| primary key                | value                          |
+| -------------------------- | ------------------------------ |
+| **Interface description:** | Open a specific file or folder |
+| **Remarks**                | None                           |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数   | 说明         | 默认值 | 验证规则                  |
-| ------ | ------------ | ------ | ------------------------- |
-| `path` | 文件绝对路径 | 无     | 参考参数验证说明`require` |
+| Parameters | Description        | Default | Validation Rules                                       |
+| ---------- | ------------------ | ------- | ------------------------------------------------------ |
+| `path`     | file absolute path | none    | refer to parameter verification instructions `require` |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -323,7 +323,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}

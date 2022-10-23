@@ -2,53 +2,53 @@
 
 ### `preview.showImage`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                   |
+| primary key | value |
 | ------------- | -------------------- |
-| **接口描述:** | 显示图片组的`js`方法 |
-| **备注**      | 无                   |
+| **Interface description:** | `js` method to display image group |
+| **Remarks** | None |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数    | 说明         | 默认值 | 验证规则 |
+| Parameters | Description | Default | Validation Rules |
 | ------- | ------------ | ------ | -------- |
-| `key`   | 设置对应的键 | 无     | 无       |
-| `value` | 设置对应的值 | 无     | 无       |
+| `key` | set the corresponding key | none | none |
+| `value` | Set the corresponding value | None | None |
 
-**方法参数示例**
+**Method parameter example**
 
-```json
+````json
 {
   "key": "test-setting",
   "value": "123456"
 }
-```
+````
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
-```json
+````json
 {}
-```
+````
 
 ---
 
 ### `preview.showPdf`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                  |
-| ------------- | ------------------- |
-| **接口描述:** | 显示 PDF 的`js`方法 |
-| **备注**      | 无                  |
+| primary key                | value                      |
+| -------------------------- | -------------------------- |
+| **Interface description:** | `js` method to display PDF |
+| **Remarks**                | None                       |
 
-**参数验证说明**
+**Parameter verification instructions**
 
-| 参数  | 说明               | 默认值 | 验证规则 |
-| ----- | ------------------ | ------ | -------- |
-| `url` | pdf 文件对应的 url | 无     | 无       |
+| Parameters | Description                       | Default | Validation Rules |
+| ---------- | --------------------------------- | ------- | ---------------- |
+| `url`      | url corresponding to the pdf file | none    | none             |
 
-**方法参数示例**
+**Method parameter example**
 
 ```json
 {
@@ -56,7 +56,7 @@
 }
 ```
 
-**方法回调`next`参数示例**
+**Method callback `next` parameter example**
 
 ```json
 {}

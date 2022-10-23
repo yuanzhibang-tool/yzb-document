@@ -1,10 +1,10 @@
-!> 为了统一方便调试,请使用 `vscode` 进行开发调试,本章节的所有调试功能,均基于`vscode`说明,基于 <a href="https://github.com/yuanzhibang-tool/yzb-extension-quickstart-ts.git" target="_blank">yzb-extension-quickstart-ts</a>.如有问题请加群讨论.
+!> In order to unify and facilitate debugging, please use `vscode` for development and debugging. All debugging functions in this chapter are based on `vscode` instructions, based on <a href="https://github.com/yuanzhibang-tool/yzb- extension-quickstart-ts.git" target="_blank">yzb-extension-quickstart-ts</a>. If you have any questions, please join the group discussion.
 
-_注意:请确保您的系统已安装好 node 环境,请使用 16 版本以上的 node,可以参考[如何安装指定版本的 node?](/#/question/how-to-install-node-version-specified ':ignore')_
+_Note: Please make sure that your system has installed the node environment, please use node version 16 or above, you can refer to [How to install a specified version of node?](/#/question/how-to-install-node-version-specified ':ignore')_
 
 ---
 
-### 1.克隆项目到本地,切换到`main`分支,安装依赖
+### 1. Clone the project locally, switch to the `main` branch, and install dependencies
 
 ```shell
 git clone https://github.com/yuanzhibang-tool/yzb-extension-quickstart-ts.git
@@ -15,33 +15,33 @@ npm install
 
 ---
 
-### 2.运行 Debug Extension,此时即可使用断点进行调试了
+### 2. Run Debug Extension, then you can use breakpoints for debugging
 
-![运行 Debug Extension](../images/1658150046021.jpg ':size=500')
-
----
-
-### 3.Ctrl + 点击 TERMINAL 中的调试链接
-
-![运行 Debug Extension](../images/1658150204383.jpg ':size=500')
+![Run Debug Extension](../images/1658150046021.jpg ':size=500')
 
 ---
 
-### 4.在简单调试工具中发送 topic 消息
+### 3. Ctrl + click the debug link in TERMINAL
 
-![在简单调试工具中发送 topic 消息](../images/20220718211945.jpg ':size=500')
-
----
-
-!>一般需要将拓展开发和开放平台应用分开开发,开发完成后再联合调试
+![Run Debug Extension](../images/1658150204383.jpg ':size=500')
 
 ---
 
-## 与前端联合调试
+### 4. Send topic messages in simple debugging tools
 
-!>联合调试前端需要`前端`项目添加依赖<a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a>,`拓展`项目需要依赖<a href="https://www.npmjs.com/package/@yuanzhibang/extension-debugger" target="_blank">@yuanzhibang/extension-debugger</a>
+![Send topic message in Simple Debug Tool](../images/20220718211945.jpg ':size=500')
 
-### 1.使用 extension debuger 启动 ws 调试服务
+---
+
+!> Generally, it is necessary to develop the expansion development and the open platform application separately, and then jointly debug after the development is completed.
+
+---
+
+## Joint debugging with the front end
+
+!>Joint debugging front-end requires `front-end` project to add dependencies<a href="https://www.npmjs.com/package/@yuanzhibang/renderer" target="_blank">@yuanzhibang/renderer</a>,` The extension project needs to depend on <a href="https://www.npmjs.com/package/@yuanzhibang/extension-debugger" target="_blank">@yuanzhibang/extension-debugger</a>
+
+### 1. Use extension debuger to start ws debugging service
 
 ```javascript
 import {
@@ -49,14 +49,14 @@ import {
   DebuggerLogger,
 } from '@yuanzhibang/extension-debugger';
 
-// !是否在vsc控制台打印
+// ! Whether to print in vsc console
 DebuggerLogger.withLog = true;
-// !启动ws调试服务
+// ! Start the ws debug service
 extensionDebugger.startWsServer(8889);
 extensionDebugger.setExtensionPath('./debug/extension.ts');
 ```
 
-### 2.前端对获取的`IpcRendererWorker`实例进行`mock`,并在`猿之棒>设置>调试工具`打开前端页面
+### 2. The front-end `mock` the obtained `IpcRendererWorker` instance, and open the front-end page in `Ape's Stick> Settings> Debugging Tools`
 
 ```javascript
 import {
@@ -69,7 +69,7 @@ import {
 } from '@yuanzhibang/renderer';
 
 this.exeExtensionMessageWorker = ipc.getWorker('run_exe_extension');
-// !可在初始化函数里添加tcp调试地址,默认localhost:8889,支持局域网以及远程调试地址
+// ! You can add the tcp debugging address in the initialization function, the default is localhost:8889, which supports LAN and remote debugging addresses
 const mock = new IpcRendererWorkerMock('localhost:8889');
 mock.mockWorker(this.exeExtensionMessageWorker);
 this.exeExtensionMessageWorker.onStart((startInfo) => {
@@ -123,4 +123,4 @@ this.exeExtensionMessageWorker.on('test-renderer-message-topic', (message) => {
 });
 ```
 
-!>此时即可完整实现拓展全生命周期的调试,如果拓展重启,请重新刷新前端页面以进行状态重置
+!> At this point, the debugging of the entire life cycle of the extension can be fully realized. If the extension restarts, please refresh the front-end page to reset the state.

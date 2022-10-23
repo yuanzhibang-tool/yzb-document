@@ -1,1 +1,1 @@
-> 本章节介绍如何开发拓展
+> This chapter describes how to develop extensions

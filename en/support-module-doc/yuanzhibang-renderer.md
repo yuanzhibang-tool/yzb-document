@@ -1,8 +1,8 @@
 # @yuanzhibang/renderer <!-- {docsify-ignore} -->
 
-用来进行猿之棒开放平台拓展的调试工具,模拟 renderer 进程和 node 进行进行通信以及回调
+A debugging tool used to expand the Ape Stick open platform, simulate the renderer process and node to communicate and call back
 
-**仓库地址:**
+**Warehouse Address:**
 
 https://github.com/yuanzhibang-tool/yzb-renderer.git
 
@@ -14,10 +14,10 @@ https://github.com/yuanzhibang-tool/yzb-renderer/issues
 
 https://www.npmjs.com/package/@yuanzhibang/renderer
 
-## 安装
+## Install
 
 `npm i @yuanzhibang/renderer --save-dev`
-或者
+or
 `yarn add @yuanzhibang/renderer --dev`
 
-## 使用
+## use

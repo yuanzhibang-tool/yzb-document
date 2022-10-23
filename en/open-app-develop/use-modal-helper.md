@@ -1,19 +1,19 @@
-> 用户通过 app.openModal 打开新的 modal 窗口,该窗口从中无法使用`bridge yzb`注入的对象,但是注入了一个名为`modalHelper`的全局对象.
+The user opens a new modal window via app.openModal from which the `bridge yzb` injected object is not available, but a global object called `modalHelper` is injected.
 
 ---
 
-**该对象有如下几个方法:**
+**This object has the following methods:**
 
 ### `modalHelper.getInitData`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                          |
-| ------------- | ------------------------------------------- |
-| **接口描述:** | 获取通过`app.openModal`中传入的`initData`值 |
-| **备注**      | 为同步接口直接赋值即可                      |
+| primary key                | value                                                         |
+| -------------------------- | ------------------------------------------------------------- |
+| **Interface description:** | Get the value of `initData` passed in `app.openModal`         |
+| **Remarks**                | You can directly assign values ​​to the synchronous interface |
 
-_示例_
+_Example_
 
 ```javascript
 var passInitData = modalHelper.getInitData();
@@ -23,37 +23,37 @@ var passInitData = modalHelper.getInitData();
 
 ### `modalHelper.cancel`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                                                               |
-| ------------- | -------------------------------------------------------------------------------- |
-| **接口描述:** | 关闭该 modal 窗口并返回空内容                                                    |
-| **备注**      | 在`app.openModal`中传入的`next`接收回调,如果 modal 窗口失焦后关闭也会触发该方法. |
+| primary key                | value                                                                                                                                         |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interface description:** | Close the modal window and return empty content                                                                                               |
+| **Remarks**                | The `next` passed in `app.openModal` receives a callback, and this method is also triggered if the modal window is closed after losing focus. |
 
-_示例_
+_Example_
 
 ```javascript
-// 在应用窗口中
+// in the application window
 yzb.app.showModal({
   data: {
-    url: 'https://www.baidu.com/', //modal视图要打开的url
-    width: 500, //打开窗口的宽
-    height: 400, //打开窗口的高
+    url: 'https://www.baidu.com/', //url to open the modal view
+    width: 500, //the width of the open window
+    height: 400, //height of the open window
     init_data: {
-      //给modal窗口传入的内容,具体如何使用参考
+      //The content passed to the modal window, how to use the reference
       k1: 'v1',
       k2: 'v2',
     },
   },
   next: (result) => {
     console.log(result);
-    //调用modalHelper.cancel(),result为空,调用modalHelper.confirm(confirmData),result为传入的confirmData
+    //Call modalHelper.cancel(), the result is empty, call modalHelper.confirm(confirmData), the result is the incoming confirmData
   },
   error: () => {},
   complete: () => {},
 });
 
-// 在modal窗口中
+// in the modal window
 modalHelper.cancel();
 ```
 
@@ -61,37 +61,37 @@ modalHelper.cancel();
 
 ### `modalHelper.confirm`
 
-**主要描述**
+**Main Description**
 
-| 主键          | 值                                              |
-| ------------- | ----------------------------------------------- |
-| **接口描述:** | 关闭该 modal 窗口并返回需要回调给调用窗口的内容 |
-| **备注**      | 在`app.openModal`中传入的`next`接收回调参数     |
+| primary key                | value                                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Interface description:** | Close the modal window and return the content that needs to be called back to the calling window |
+| **Remarks**                | `next` passed in `app.openModal` receives callback parameters                                    |
 
-_示例_
+_Example_
 
 ```javascript
-// 在应用窗口中
+// in the application window
 yzb.app.showModal({
   data: {
-    url: 'https://www.baidu.com/', //modal视图要打开的url
-    width: 500, //打开窗口的宽
-    height: 400, //打开窗口的高
+    url: 'https://www.baidu.com/', //url to open the modal view
+    width: 500, //the width of the open window
+    height: 400, //height of the open window
     init_data: {
-      //给modal窗口传入的内容,具体如何使用参考
+      //The content passed to the modal window, how to use the reference
       k1: 'v1',
       k2: 'v2',
     },
   },
   next: (result) => {
     console.log(result);
-    //调用modalHelper.cancel(),result为空,调用modalHelper.confirm(confirmData),result为传入的confirmData
+    //Call modalHelper.cancel(), the result is empty, call modalHelper.confirm(confirmData), the result is the incoming confirmData
   },
   error: () => {},
   complete: () => {},
 });
 
-// 在modal窗口中
+// in the modal window
 var comfirmData = {
   ck1: 'cv1',
   ck2: 'cv2',

@@ -1,21 +1,21 @@
-### 获取应用所拥有权限信息的接口
+### The interface for obtaining permission information owned by the application
 
-> 具体权限信息,请参考权限介绍页面
+> For specific permission information, please refer to the permission introduction page
 
-**接口地址**
+**interface address**
 
 `POST /UserResource/getAppAccess`
 
-**参数说明**
+**Parameter Description**
 
-| 参数      | 是否必须 | 说明               |
-| --------- | -------- | ------------------ |
-| `open_id` | 是       | 用户的`open_id`    |
-| `app_id`  | 是       | 开放平台应用的`id` |
+| Parameter | Required | Description                           |
+| --------- | -------- | ------------------------------------- |
+| `open_id` | yes      | user's `open_id`                      |
+| `app_id`  | yes      | `id` of the open platform application |
 
-**返回值**
+**return value**
 
-成功的返回值
+successful return value
 
 ```json
 {
@@ -25,7 +25,7 @@
 }
 ```
 
-错误的返回值,参见错误信息介绍
+Error return value, see error message introduction
 
 ```json
 {
@@ -37,36 +37,36 @@
 
 ---
 
-### 获取用户基础信息的接口
+### Interface for obtaining basic user information
 
-**接口地址**
+**interface address**
 
 `POST /UserResource/getUserBaseInfo`
 
-**参数说明**
+**Parameter Description**
 
-| 参数      | 是否必须 | 说明               |
-| --------- | -------- | ------------------ |
-| `open_id` | 是       | 用户的`open_id`    |
-| `app_id`  | 是       | 开放平台应用的`id` |
+| Parameter | Required | Description                           |
+| --------- | -------- | ------------------------------------- |
+| `open_id` | yes      | user's `open_id`                      |
+| `app_id`  | yes      | `id` of the open platform application |
 
-**返回值**
+**return value**
 
-成功的返回值
+successful return value
 
 ```json
 {
   "status": "2000",
   "message": "ok",
   "data": {
-    "nick": "天使",
+    "nick": "angel",
     "avatar": "https://upload.yuanzhibang.com/file/2019-07-21/0B4C96B3-DD62-47F9-B9BF-080CAF090DBA.jpeg",
-    "sex": "1" //1男,2女,3未知
+    "sex": "1" //1 male, 2 female, 3 unknown
   }
 }
 ```
 
-错误的返回值,参见错误信息介绍
+Error return value, see error message introduction
 
 ```json
 {

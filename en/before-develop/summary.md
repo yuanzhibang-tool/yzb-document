@@ -1,7 +1,7 @@
-猿之棒开发总共可以分为三个部分，第一部分为网页开发，用以通过`js`接口实现与客户端不同的交互功能。第二部分为服务器开发，通过接口与猿之棒的服务器进行交互，获取用户相关数据等业务接口，以及获取各种授权`token`等操作。第三部分为拓展开发,具体请参见拓展开发章节.
+Yuanzhibang development can be divided into three parts in total. The first part is web development, which is used to achieve different interactive functions with the client through the `js` interface. The second part is server development. It interacts with the Apezhibang server through the interface, obtains business interfaces such as user-related data, and obtains various authorized `token` operations. The third part is expansion development, please refer to the expansion development chapter for details.
 
-| 部分     | 内容       | 说明                                                                                                         |
-| -------- | ---------- | ------------------------------------------------------------------------------------------------------------ |
-| 第一部分 | 网页开发   | 用以通过`js bridge`接口实现与客户端不同的交互功能。                                                          |
-| 第二部分 | 服务器开发 | 通过接口与猿之棒的服务器进行交互，获取用户相关资源,通用资源等业务接口，以及获取各种授权`token`等操作。       |
-| 第三部分 | 拓展开发   | 通过开发拓展,实现 node 赋予的各种原生能力,具体请参见[拓展开发](/#/extension-develop/default ':ignore')章节。 |
+| Section  | Content               | Description                                                                                                                                                                                               |
+| -------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Part I   | Web Development       | Used to implement different interactive functions with the client through the `js bridge` interface.                                                                                                      |
+| Part II  | Server Development    | Interact with Apezhibang's server through the interface, obtain business interfaces such as user-related resources and general resources, and obtain various authorization `token` and other operations.  |
+| Part III | Expansion Development | Through development and expansion, various native capabilities endowed by node can be realized. For details, please refer to the [Extension Development](/#/extension-develop/default ':ignore') chapter. |
