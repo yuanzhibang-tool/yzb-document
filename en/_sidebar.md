@@ -21,7 +21,7 @@
   - [API Specification](en/open-app-develop/specification.md)
   - [Callback Error Code](en/open-app-develop/js-api-error-code.md)
   - [Bridge Init Callback](en/open-app-develop/callback.md)
-  - [Import Bridge](en/open-app-develop/js-bridge-note)
+  - [Bridge Info](en/open-app-develop/js-bridge-note)
   - [Parameter Validation](en/open-app-develop/validation.md)
   - [core.config verification](en/open-app-develop/generate-core-config.md)
   - [JS API](en/open-app-develop/js-api.md)

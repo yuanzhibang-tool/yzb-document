@@ -4,9 +4,9 @@
 
 ![](../images/screenshot_1654686997675.png)
 
-### Introduce js, inject objects
+### Import js, inject Bridge Object
 
-Introduce `js bridge` in the `header` in the `html` file, see the latest version [Introduction to Bridge Instructions](en/open-app-develop/js-bridge-note)
+Import `js bridge` in the `header` of the `html` file, get the latest version [Bridge Info](en/open-app-develop/js-bridge-note)
 
 ```html
 <script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-vx.x.x.js"></script>
