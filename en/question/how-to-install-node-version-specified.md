@@ -31,8 +31,6 @@ _Direct installation:_
 
 _brew install_
 
-!> The source repository of brew uses `github` source, please <a href="https://su.yuanzhibang.com/2Cp" target="_blank">click</a> to accelerate `github`
-
 1. `brew` installation, installed and ignored, <a href="https://brew.sh/" target="_blank">brew official website</a>
 2. Install `node` using `brew` `brew install node@16`
 

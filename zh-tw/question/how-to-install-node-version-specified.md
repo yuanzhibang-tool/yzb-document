@@ -31,8 +31,6 @@ _直接安裝:_
 
 _brew 安裝_
 
-!> brew 的源倉庫使用到的是`github`源,`github`加速請<a href="https://su.yuanzhibang.com/2Cp" target="_blank">點擊</a>
-
 1. `brew` 安裝,已安裝清忽略,<a href="https://brew.sh/" target="_blank">brew 官網</a>
 2. 使用`brew`安裝`node` `brew install node@16`
 
