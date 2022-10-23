@@ -1,8 +1,8 @@
 <!-- _navbar.md -->
 
-- [開源項目](https://github.com/yuanzhibang-tool)
-- [Docker 鏡像](https://hub.docker.com/u/yuanzhibang)
-- [npm 倉庫](https://www.npmjs.com/~yuanzhibang)
+- [Github](https://github.com/yuanzhibang-tool)
+- [Docker](https://hub.docker.com/u/yuanzhibang)
+- [npm](https://www.npmjs.com/~yuanzhibang)
 
 - **[En]**
   - [En](/en/)
