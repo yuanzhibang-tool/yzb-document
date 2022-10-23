@@ -33,6 +33,7 @@
     - [Namespace native.md](en/open-app-develop/js-api-native.md)
     - [Namespace setting.md](en/open-app-develop/js-api-setting.md)
     - [Namespace config.md](en/open-app-develop/js-api-config.md)
+    - [Namespace list.md](en/open-app-develop/js-api-list.md)
   - [Use modalHelper in modal window](en/open-app-develop/use-modal-helper.md)
   - [How to debug an open app?](en/open-app-develop/debug.md)
 - [Extension Development](en/extension-develop/default.md)
