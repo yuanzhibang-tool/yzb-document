@@ -14,6 +14,8 @@ _使用 nvm:_
 3. 使用`nvm use` 設置使用的`node`版本
 
 ```shell
+# 列出node版本
+nvm list-remote
 # 安裝16.9.1版本的 node
 nvm install 16.9.1
 # 切換到16.9.1版本的 node
@@ -49,6 +51,8 @@ _nvm 安裝_
 
 ```shell
 brew install nvm
+# 列出node版本
+nvm list-remote
 # 安裝16.9.1版本的 node
 nvm install 16.9.1
 # 切換到16.9.1版本的 node
@@ -63,7 +67,7 @@ _shell 安裝_
 2. 安裝
 
 ```shell
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 apt-get install -y nodejs # 其他系統請使用對應的安卓命令
 ```
 
@@ -75,6 +79,8 @@ _nvm 安裝_
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# 列出node版本
+nvm list-remote
 # 安裝16.9.1版本的 node
 nvm install 16.9.1
 # 切換到16.9.1版本的 node

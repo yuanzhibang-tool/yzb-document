@@ -14,6 +14,10 @@ _使用 nvm:_
 3. 使用`nvm use` 设置使用的`node`版本
 
 ```shell
+# 如果安装比较慢请设置国内源
+SET NVM_NODEJS_ORG_MIRROR=https://mirrors.ustc.edu.cn/node/
+# 列出node版本
+nvm list-remote
 # 安装16.9.1版本的 node
 nvm install 16.9.1
 # 切换到16.9.1版本的 node
@@ -49,6 +53,10 @@ _nvm 安装_
 
 ```shell
 brew install nvm
+# 如果安装比较慢请设置国内源
+export NVM_NODEJS_ORG_MIRROR=https://mirrors.ustc.edu.cn/node/
+# 列出node版本
+nvm list-remote
 # 安装16.9.1版本的 node
 nvm install 16.9.1
 # 切换到16.9.1版本的 node
@@ -63,7 +71,7 @@ _shell 安装_
 2. 安装
 
 ```shell
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 apt-get install -y nodejs # 其他系统请使用对应的安卓命令
 ```
 
@@ -75,6 +83,10 @@ _nvm 安装_
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# 如果安装比较慢请设置国内源
+export NVM_NODEJS_ORG_MIRROR=https://mirrors.ustc.edu.cn/node/
+# 列出node版本
+nvm list-remote
 # 安装16.9.1版本的 node
 nvm install 16.9.1
 # 切换到16.9.1版本的 node

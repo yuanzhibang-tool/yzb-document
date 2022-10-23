@@ -1,82 +1,88 @@
-> 如果您需要使用到多版本,请使用 `nvm` 进行多版本 `node` 管理
+> If you need to use multiple versions, please use `nvm` for multi-version `node` management
 
 ### Windows
 
-_直接安装:_
+_Direct installation:_
 
-1. 去`node`<a href="https://nodejs.org/zh-cn/download/" target="_blank">官方网站下载页面</a> 下载指定版本的 `windows` 的 `node` 安装包
-2. 安装选项中选择自动添加 `PATH`
+1. Go to `node`<a href="https://nodejs.org/zh-cn/download/" target="_blank">official website download page</a> to download the specified version of `windows` of `node` install package
+2. In the installation options, choose to automatically add `PATH`
 
-_使用 nvm:_
+_use nvm:_
 
-1. 去 nvm-windows 官网下载安装包`https://github.com/coreybutler/nvm-windows/releases`
-2. 使用`nvm install`安装指定版本的`node`
-3. 使用`nvm use` 设置使用的`node`版本
+1. Go to the nvm-windows official website to download the installation package`https://github.com/coreybutler/nvm-windows/releases`
+2. Use `nvm install` to install the specified version of `node`
+3. Use `nvm use` to set the version of `node` to use
 
 ```shell
-# 安装16.9.1版本的 node
+# list node versions
+nvm list-remote
+# Install node 16.9.1
 nvm install 16.9.1
-# 切换到16.9.1版本的 node
+# switch to node 16.9.1
 nvm use 16.9.1
 ```
 
 ### macOS
 
-_直接安装:_
+_Direct installation:_
 
-1. 去`node`<a href="https://nodejs.org/zh-cn/download/" target="_blank">官方网站下载页面</a> 下载指定版本的 `macOS ` 的 `node` 安装包
-2. 安装即可
+1. Go to `node`<a href="https://nodejs.org/zh-cn/download/" target="_blank">official website download page</a> to download the specified version of `node` for `macOS` ` install package
+2. Just install
 
-_brew 安装_
+_brew install_
 
-!> brew 的源仓库使用到的是`github`源,`github`加速请<a href="https://su.yuanzhibang.com/2Cp" target="_blank">点击</a>
+!> The source repository of brew uses `github` source, please <a href="https://su.yuanzhibang.com/2Cp" target="_blank">click</a> to accelerate `github`
 
-1. `brew` 安装,已安装清忽略,<a href="https://brew.sh/" target="_blank">brew 官网</a>
-2. 使用`brew`安装`node` `brew install node@16`
+1. `brew` installation, installed and ignored, <a href="https://brew.sh/" target="_blank">brew official website</a>
+2. Install `node` using `brew` `brew install node@16`
 
 ```shell
-# 安装brew
+# install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# 安装node 16
+# install node 16
 brew install node@16
 ```
 
-_nvm 安装_
+_nvm install_
 
-1. `brew` 安装 `nvm`
-2. 使用`nvm install`安装指定版本的`node`
-3. 使用`nvm use` 设置使用的`node`版本
+1. `brew` install `nvm`
+2. Use `nvm install` to install the specified version of `node`
+3. Use `nvm use` to set the version of `node` to use
 
 ```shell
 brew install nvm
-# 安装16.9.1版本的 node
+# list node versions
+nvm list-remote
+# Install node 16.9.1
 nvm install 16.9.1
-# 切换到16.9.1版本的 node
+# switch to node 16.9.1
 nvm use 16.9.1
 ```
 
 ### Linux
 
-_shell 安装_
+_shell install_
 
-1. 安装`node`源
-2. 安装
+1. Install the `node` source
+2. Installation
 
 ```shell
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-apt-get install -y nodejs # 其他系统请使用对应的安卓命令
+apt-get install -y nodejs # For other systems, please use the corresponding Android command
 ```
 
-_nvm 安装_
+_nvm install_
 
-1. 安装`nvm`
-2. 使用`nvm install`安装指定版本的`node`
-3. 使用`nvm use` 设置使用的`node`版本
+1. Install `nvm`
+2. Use `nvm install` to install the specified version of `node`
+3. Use `nvm use` to set the version of `node` to use
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-# 安装16.9.1版本的 node
+# list node versions
+nvm list-remote
+# Install node 16.9.1
 nvm install 16.9.1
-# 切换到16.9.1版本的 node
+# switch to node 16.9.1
 nvm use 16.9.1
 ```

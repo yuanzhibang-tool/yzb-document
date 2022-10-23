@@ -35,7 +35,7 @@
     - [Namespace config.md](en/open-app-develop/js-api-config.md)
   - [Use modalHelper in modal window](en/open-app-develop/use-modal-helper.md)
   - [How to debug an open app?](en/open-app-develop/debug.md)
-- [Extension development](en/extension-develop/default.md)
+- [Extension Development](en/extension-develop/default.md)
   - [Summary](en/extension-develop/summary.md)
   - [Notice](en/extension-develop/notice.md)
   - [How to debug extensions?](en/extension-develop/debug.md)
