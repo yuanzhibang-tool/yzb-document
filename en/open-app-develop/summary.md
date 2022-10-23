@@ -6,10 +6,10 @@
 
 ### Introduce js, inject objects
 
-Introduce `js bridge` inside `header` in `html` file
+Introduce `js bridge` in the `header` in the `html` file, see the latest version [Introduction to Bridge Instructions](en/open-app-develop/js-bridge-note)
 
 ```html
-<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js"></script>
+<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-vx.x.x.js"></script>
 <script>
 // Set ready callback after introduction
 yzb.ready(
