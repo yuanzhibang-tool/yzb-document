@@ -4,7 +4,7 @@
 
 #### JS 庫最新版本,支持 cdn 加速
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js`
 
 _重要說明_
 

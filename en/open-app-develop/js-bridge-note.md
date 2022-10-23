@@ -4,7 +4,7 @@
 
 #### The latest version of the JS library, supports cdn acceleration
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js`
 
 _important_
 

@@ -9,7 +9,7 @@
 Introduce `js bridge` inside `header` in `html` file
 
 ```html
-<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.35.js"></script>
+<script src="https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js"></script>
 <script>
 // Set ready callback after introduction
 yzb.ready(
