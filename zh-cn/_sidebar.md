@@ -33,6 +33,7 @@
     - [命名空间-native.md](zh-cn/open-app-develop/js-api-native.md)
     - [命名空间-setting.md](zh-cn/open-app-develop/js-api-setting.md)
     - [命名空间-config.md](zh-cn/open-app-develop/js-api-config.md)
+    - [命名空间-list.md](zh-cn/open-app-develop/js-api-list.md)
   - [在 modal 窗口中使用 modalHelper](zh-cn/open-app-develop/use-modal-helper.md)
   - [如何调试开放平台应用?](zh-cn/open-app-develop/debug.md)
 - [拓展开发](zh-cn/extension-develop/default.md)
