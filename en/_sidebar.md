@@ -5,7 +5,7 @@
 - [Before Development](en/before-develop/default.md)
   - [Overview](en/before-develop/summary.md)
   - [Concept](en/before-develop/concept.md)
-  - [Ability](en/before-develop/ability.md)
+  - [Capability](en/before-develop/ability.md)
 - [Server Development](en/server-develop/default.md)
   - [Summary](en/server-develop/summary.md)
   - [API Specification](en/server-develop/specification.md)
