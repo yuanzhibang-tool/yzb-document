@@ -12,7 +12,7 @@
 | 6     | Receive callbacks for opening open platform applications through `url` through external (such as browsers, third-party applications) |
 | 7     | Display images and pdf files through windows                                                                                         |
 | 8     | Vibrate window to notice user                                                                                                        |
-| 9     | Run `binary` or [extension](/#/extension-develop/default ':ignore') or `script`                                                      |
+| 9     | Run `binary` or [extension](/#/en/extension-develop/default ':ignore') or `script`                                                   |
 | 10    | Save, get, delete the settings of open platform applications                                                                         |
 | 11    | Get app online configs which you saved on `https://open.yuanzhibang.com`                                                             |
 
