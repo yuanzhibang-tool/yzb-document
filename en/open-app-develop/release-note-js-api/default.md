@@ -1,5 +1,6 @@
-## 2022/7/01
+#### 2022/11/26
 
-### Update Content
-
-- 1. Add the content of the first version of the document
+```
+1.add setting.clear
+2.release bridge.js version 0.0.37
+```

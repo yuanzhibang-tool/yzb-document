@@ -92,9 +92,9 @@
 
 **Parameters**
 
-| Parameters | Description                                                                                                      | Default | Validation Rules |
-| ---------- | ---------------------------------------------------------------------------------------------------------------- | ------- | ---------------- |
-| `key`      | If not passed, all the configuration under the user will be cleared. Support multiple passes separated by commas | None    | None             |
+| Parameters | Description                                                                                                | Default | Validation Rules |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| `key`      | If not passed, all the setting under the user will be cleared. Support multiple passes separated by commas | None    | None             |
 
 **Method parameter example**
 
@@ -107,6 +107,37 @@
 **Method callback `next` parameter example**
 
 !> Whether multiple or one is returned, it will be returned in this format, if not, there is no such value
+
+```json
+{}
+```
+
+---
+
+### `setting.clear`
+
+!> This interface has been provided since the container `1.5.0` version
+
+**Description**
+
+| Key                        | Value                            |
+| -------------------------- | -------------------------------- |
+| **Interface description:** | `js` method to clear all setting |
+| **Note**                   | None                             |
+
+**Parameters**
+
+| Parameters | Description | Default | Validation Rules |
+| ---------- | ----------- | ------- | ---------------- |
+| `None`     | None        | None    | None             |
+
+**Method parameter example**
+
+```json
+{}
+```
+
+**Method callback `next` parameter example**
 
 ```json
 {}

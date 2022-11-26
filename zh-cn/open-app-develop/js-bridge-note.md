@@ -1,10 +1,10 @@
-### 最新的 bridge 版本 `v0.0.36`
+### 最新的 bridge 版本 `v0.0.37`
 
 ---
 
 #### JS 库最新版本,支持 cdn 加速
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.36.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.37.js`
 
 _重要说明_
 
