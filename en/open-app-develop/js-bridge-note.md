@@ -1,10 +1,10 @@
-### The latest bridge version `v0.0.37`
+### The latest bridge version `v0.0.38`
 
 ---
 
 #### The latest version of the JS library, supports cdn acceleration
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.37.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.38.js`
 
 _important_
 
