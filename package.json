@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/yuanzhibang-tool/yzb-document#readme",
   "devDependencies": {
-    "@yuanzhibang/cli": "^0.0.15",
-    "docsify": "^4.12.2"
+    "@yuanzhibang/cli": "^0.0.20",
+    "docsify": "^4.13.0"
   }
 }
