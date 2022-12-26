@@ -39,7 +39,7 @@
         // 处理url跳转
         var hash = location.hash.substr(2);
         var first_hash = location.hash.substr(2).split('/')[0];
-        if (first_hash == '') {
+        if (first_hash !== 'zh-cn' && first_hash !== 'en' && first_hash !== 'zh-tw') {
             var user_lang = localStorage.getItem('K_USER_LANGUAGE');
             if (user_lang) {
                 location.href = `#/${user_lang}/guide`;
