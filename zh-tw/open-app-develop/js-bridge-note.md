@@ -1,10 +1,10 @@
-### 最新的 bridge 版本 `v0.0.38`
+### 最新的 bridge 版本 `v0.0.41`
 
 ---
 
 #### JS 庫最新版本,支持 cdn 加速
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.38.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.41.js`
 
 _重要說明_
 
@@ -23,6 +23,13 @@ _重要說明_
 ---
 
 ### 更新日誌:
+
+#### 2023/01/09
+
+```
+1.修復`bridge.js` 中 版本對比方法錯誤
+2.發布0.0.41版本的 bridge.js
+```
 
 #### 2022/10/24
 

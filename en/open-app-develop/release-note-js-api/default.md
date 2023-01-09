@@ -1,3 +1,9 @@
+#### 2023/01/09
+
+```
+1.fix bugs of version compare methon.
+2.release bridge.js version 0.0.41
+
 #### 2022/11/29
 
 ```

@@ -1,10 +1,10 @@
-### The latest bridge version `v0.0.38`
+### The latest bridge version `v0.0.41`
 
 ---
 
 #### The latest version of the JS library, supports cdn acceleration
 
-`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.38.js`
+`https://static.yuanzhibang.com/app/open/js/bridge/js-yzb-bridge-v0.0.41.js`
 
 _important_
 
@@ -23,6 +23,13 @@ _important_
 ---
 
 ### Changelog:
+
+#### 2023/01/09
+
+```
+1. Fix the version comparison method error in `bridge.js`
+2. Release bridge.js version 0.0.41
+```
 
 #### 2022/10/24
 
